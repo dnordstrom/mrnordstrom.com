@@ -41,5 +41,5 @@ namespace :deploy do
   end
 end
 
-after "deploy:finalize_update", "deploy:set_permissions"
 after "deploy:finalize_update", "deploy:restart"
+after "deploy:finalize_update", "deploy:set_permissions"
