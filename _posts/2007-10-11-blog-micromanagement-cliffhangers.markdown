@@ -21,11 +21,11 @@ If you run a public blog, your traffic will never be entirely targeted. Once in 
 
 Many social bookmarking sites let you type in a short description of the site or post you're submitting. This is an excellent opportunity to use a cliffhanger. Let's say I want to submit an article from my <a href="http://www.appleare.com" target="_blank">Apple blog</a> to <a href="http://www.digg.com" target="_blank">Digg</a>. Digg often uses the posts first paragraph as a description, e.g.:
 
-<em>"They said October and it looks like theyâ€™re going to make it. All mighty AppleInsider reports that sources say Apple will release their new version of Mac OS X later this month. More specifically, the date is October 26th and by judging from the way they write about it, it looks like AppleInsider has got some solid sources." </em>
+<em>"They said October and it looks like they��������re going to make it. All mighty AppleInsider reports that sources say Apple will release their new version of Mac OS X later this month. More specifically, the date is October 26th and by judging from the way they write about it, it looks like AppleInsider has got some solid sources." </em>
 
 Now, if someone reads this description, they might find that there's no reason to visit the site. The post itself may offer more information but the big news is right there. What if I changed the description then? Take a look at my new and improved version:
 
-<em>"They said October and it looks like theyâ€™re going to make it. All mighty AppleInsider reports that sources say Apple will release their new version of Mac OS X later this month. More specifically, the date is [...]"</em>
+<em>"They said October and it looks like they��������re going to make it. All mighty AppleInsider reports that sources say Apple will release their new version of Mac OS X later this month. More specifically, the date is [...]"</em>
 
 What Apple fan wouldn't click that link?
 

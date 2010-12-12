@@ -37,7 +37,7 @@ In my case, it's my friends who believe in me, but perhaps I just make really co
 
 Even though we'll never figure these things out, it's still the journey that's interesting. And in a world everything is subjectively controlled by different point of views and state of minds, in which there may not even exist such a thing as sense, the only things that matter are the interesting things.             <span></span>
 
-<em><span>â€œ</span>To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.</em><span><em>"</em>
+<em><span>�������</span>To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.</em><span><em>"</em>
 Ralph Waldo Emerson
 </span>
 <p class="quotation">&nbsp;</p>

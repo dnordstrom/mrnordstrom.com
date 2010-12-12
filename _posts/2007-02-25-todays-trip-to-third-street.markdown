@@ -15,7 +15,7 @@ For those of you not into the sport of bodybuilding, Bob Cicherillo is a very we
 
 We left Bob and Santa Monica Place behind us and once again went up 3rd. Erik found a nice shirt at GAP but other than that, nothing. Just when I was about to give up and head home, I saw the light. A shining sign saying 'A|E'.
 
-Inside the Armani Exchange store, things finally changed. After only a few minutes I found the perfect jacket. You know the one you put on and go 'wow, this is awesome'. Just the kind of jacket I was expecting to find hours earlier. I happilyÂ handed my VISA cardÂ to the nice lady at the cash register.
+Inside the Armani Exchange store, things finally changed. After only a few minutes I found the perfect jacket. You know the one you put on and go 'wow, this is awesome'. Just the kind of jacket I was expecting to find hours earlier. I happily����handed my VISA card����to the nice lady at the cash register.
 
 What did I learn on this trip?
 

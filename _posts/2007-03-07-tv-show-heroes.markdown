@@ -11,4 +11,4 @@ It's truly amazing to see an episode, or an entire show for that matter, so perf
 
 Everything from soundtrack to cinematics added to the experience of this episode but what really touched my heart is the insanely incredible story, which has unfolded for weeks and finally come to a climax.
 
-It's moments like these that makes life worth living. I'mÂ thankfully left truly amazed.
+It's moments like these that makes life worth living. I'm����thankfully left truly amazed.

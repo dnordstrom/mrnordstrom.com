@@ -33,7 +33,7 @@ Use <a href="http://www.google.com/reader/">Google Reader</a>
 <h2>Do study the web</h2>
 <p>You&rsquo;ve got to know all about your medium and how it works. Designing for the web, you should have an idea of the history of web browsers, web standards, screen resolutions, web fonts, mobile web design and so on. There are loads of nice things you can do on the web but there are also a lot of things to watch out for.</p>
 
-<h2>Donâ€™t try</h2>
+<h2>Don��������t try</h2>
 <p>There&rsquo;s one question I&rsquo;ve heard many times, from almost every client I&rsquo;ve had: &ldquo;Is it possible to &hellip; ?&rdquo; The answer is that anything is possible so never try anything. Instead decide right away&mdash;you either do it or you don&rsquo;t.</p>
 
 <h2>Don&rsquo;t let your software design for you</h2>
