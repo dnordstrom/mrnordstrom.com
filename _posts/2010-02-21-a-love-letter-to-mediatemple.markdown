@@ -5,7 +5,7 @@ excerpt: ""
 wordpress_id: 714
 wordpress_url: http://www.mrnordstrom.com/?p=714
 ---
-<p>A brown package was delivered to my mailbox last week. The postage told me that it had been shipped all the way from the US. More specifically, it was sent from Culver City, California��������from the offices of <a href="http://www.mediatemple.net/">MediaTemple</a>.</p>
+<p>A brown package was delivered to my mailbox last week. The postage told me that it had been shipped all the way from the US. More specifically, it was sent from Culver City, California????????from the offices of <a href="http://www.mediatemple.net/">MediaTemple</a>.</p>
 <!--more-->
 <p>Inside was a very neat t-shirt with the (mt) logo on it, and of course a bunch of cool stickers. Last but not least, there was an envelope containing a hand-written note from my friends at my favorite hosting company.</p>
 

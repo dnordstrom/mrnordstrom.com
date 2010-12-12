@@ -9,7 +9,7 @@ There's a good reason why I'm not posting in this category so often these days a
 
 Since I quit school in June, I've been looking for an opportunity for practical training or perhaps even a real job, while I'm doing some freelance work here and there. I want to work in the advertising business, preferably with copywriting, so I've been emailing some local agencies trying to get a chance to work with them and get some valuable experience.
 
-<!--more-->Most of these agencies kindly responds to my emails but some seem to be lacking that kindness. A friend of mine introduced me to a manager at Osynlig Webbyr���� (Web Agency) and after a few minutes of talking we decided that I should send him and email about myself. Said, done, three emails and two weeks later, I still haven't gotten a reply.
+<!--more-->Most of these agencies kindly responds to my emails but some seem to be lacking that kindness. A friend of mine introduced me to a manager at Osynlig Webbyr???? (Web Agency) and after a few minutes of talking we decided that I should send him and email about myself. Said, done, three emails and two weeks later, I still haven't gotten a reply.
 
 I understand that web and design agencies has a gigantic inbox but I still think that they should take the time to reply to every email they get. At takes about one second to type the word 'no' and another second to click 'Send'. Heck, you can even make an automatic response for all emails containing the word 'portfolio', where you explain your situation.
 

@@ -21,5 +21,5 @@ What I remember is the wonderful feeling of walking down the Third Street Promen
 
 It's funny how time gives you perspective that brings out those wonderful moments. Question is; why bother to worry when it won't matter anyhow?
 
-�������Worry never robs tomorrow of its sorrow, it only saps today of its joy.�������
+???????Worry never robs tomorrow of its sorrow, it only saps today of its joy.???????
 <em>Leo F. Buscaglia</em>

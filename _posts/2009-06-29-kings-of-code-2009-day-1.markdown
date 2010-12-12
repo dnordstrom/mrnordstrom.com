@@ -54,4 +54,4 @@ My first day of my first visit at Kings of Code turned out to be warm, exciting 
 
 <p><a href="http://search.twitter.com/search?q=kingsofcode">See you there</a>!</p>
 
-<p><em><strong>Note:</strong> Rapid blogging, the clock is ticking��������beware of typos</em>.</p>
+<p><em><strong>Note:</strong> Rapid blogging, the clock is ticking????????beware of typos</em>.</p>

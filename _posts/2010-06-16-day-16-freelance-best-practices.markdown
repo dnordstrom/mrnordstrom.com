@@ -64,7 +64,7 @@ wordpress_url: http://www.mrnordstrom.com/?p=1095
 <h2>The rest</h2>
 <p>There&rsquo;s so much it&rsquo;s practically impossible to list everything in a single post. In fact, all of these headings could be made into their own blog posts since there&rsquo;s so much to say about each of them.</p>
 <p>Pricing your work right is something that is discussed and written about a lot, and here&rsquo;s a few articles on the subject:</p>
-<a href="http://webdesign.about.com/cs/salaries/a/aa022403a.htm">How To Set a Price�������</a><br>
+<a href="http://webdesign.about.com/cs/salaries/a/aa022403a.htm">How To Set a Price???????</a><br>
 <a href="http://articles.sitepoint.com/article/freelance-pricing-1-set-rate">Freelance Pricing</a><br>
 <a href="http://articles.sitepoint.com/article/web-work-should-charge">Pricing Web Work</a><br>
 <a href="http://freelanceswitch.com/the-business-of-freelancing/why-i-believe-in-pricing-work-based-on-value/">Pricing Your Work Based on Value</a></p>

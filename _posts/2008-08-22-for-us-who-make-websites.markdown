@@ -17,7 +17,7 @@ I'm searching for a balance where I can work at peak efficiency, maintain the pa
 <strong>How much of your work is web-related?</strong> <em>All or nearly all of my work is web-related.</em> 
 I love the web - the web is what I do.
 
-<strong>Your personal salary aside, how��������s business?</strong> <em>My agency is doing well.</em> 
+<strong>Your personal salary aside, how????????s business?</strong> <em>My agency is doing well.</em> 
 Knowing - or believing - that your company is doing well is one of the keys to professional happiness. You know that you're in the clear, that you can go to work and do what you do, what you like, without stress. Of course it's important.
 
 <strong>With which of the following statements do you most identify?</strong> <em>I am confident about my job and my opportunities for growth.</em> 
