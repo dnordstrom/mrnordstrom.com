@@ -30,13 +30,14 @@ namespace :deploy do
   task :stop do ; end
   task :restart, :roles => :app, :except => { :no_release => true } do
     # run "#{try_sudo} /etc/init.d/httpd restart" # Restart Apache
-    run "rm -rf #{deploy_to}/shared/_site && mkdir #{deploy_to}/shared/_site && mkdir #{release_path}/_site && ln -nfs #{shared_path}/_site #{release_path}/_site" # Remove old site
-    #run "cd #{release_path} && jekyll" # Reload Jekyll
+    run "rm -rf #{deploy_to}/shared/_site && mkdir #{deploy_to}/shared/_site && ln -nfs #{shared_path}/_site #{release_path}/_site" # Remove old site
+    run "cd #{release_path} && jekyll" # Reload Jekyll
   end
   
   task :set_permissions, :roles => :app do
     run "chown -R apache #{deploy_to}/releases"
     run "chown -R apache #{deploy_to}/httpdocs"
+    run "chown -R apache #{deploy_to}/shared/_site"
   end
 end
 
