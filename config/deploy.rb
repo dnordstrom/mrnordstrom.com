@@ -2,7 +2,7 @@
 # Application
 ##
 set :application, "mrnordstrom.com"
-set :repository,  "ssh://git@niroot.com/var/www/git/mrnordstrom.com.git"
+set :repository,  "ssh://root@niroot.com/var/www/git/mrnordstrom.com.git"
 
 ##
 # Servers
@@ -30,15 +30,15 @@ namespace :deploy do
   task :stop do ; end
   task :restart, :roles => :app, :except => { :no_release => true } do
     # run "#{try_sudo} /etc/init.d/httpd restart" # Restart Apache
-    run "mkdir #{release_path}/_site && ln -nfs #{shared_path}/_site #{release_path}/_site" # Reload Jekyll
+    run "rm -rf #{deploy_to}/shared/_site && mkdir #{deploy_to}/shared/_site && mkdir #{release_path}/_site && ln -nfs #{shared_path}/_site #{release_path}/_site" # Remove old site
     run "cd #{release_path} && jekyll" # Reload Jekyll
   end
   
   task :set_permissions, :roles => :app do
     run "chown -R apache #{deploy_to}/releases"
-    run "chown -R apache #{deploy_to}/current"
     run "chown -R apache #{deploy_to}/httpdocs"
   end
 end
 
 after "deploy:finalize_update", "deploy:set_permissions"
+after "deploy:finalize_update", "deploy:restart"
