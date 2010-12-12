@@ -14,8 +14,7 @@ role :db,  "niroot.com", :primary => true
 ##
 # Deployment settings
 ##
-set :user,          "git"
-set :password,      "g1tp@$$"
+set :user,          "root"
 set :scm,           :git
 set :branch,        'master'
 set :deploy_via,    'remote_cache'
