@@ -260,6 +260,15 @@ body > a[href="#comments"] {
   opacity: 0.25;
 }
 
+/* Disqus */
+
+#comments h3 {
+  font-size: 1.3em;
+  margin-bottom: 0.6em;
+}
+
+/* IntenseDebate */
+
 body #idc-container .idc-trackbacks,
 body #idc-container .idc-comments {
     margin: 0 0 5em;
