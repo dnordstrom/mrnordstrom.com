@@ -10,8 +10,8 @@ wordpress_url: http://www.mrnordstrom.com/?p=1297
 <h2>Do look for inspiration</h2>
 <p>If you have little experience with designing for the web, it&rsquo;s a good idea to have a look at the work of people who do. &ldquo;Trends&rdquo; are bullshit so don&rsquo;t focus too much on trying to find out what&rsquo;s fashionable. Instead gather ideas. When you find something interesting, figure out how it was done.</p>
 
-<a href="http://dribbble.com/">Dribbble</a><br>
-<a href="http://www.behance.net/?field=102&amp;network=&amp;curator=&amp;content=projects&amp;sort=&amp;time=all">Behance Network</a>
+<p><a href="http://dribbble.com/">Dribbble</a><br>
+<a href="http://www.behance.net/?field=102&amp;network=&amp;curator=&amp;content=projects&amp;sort=&amp;time=all">Behance Network</a></p>
 
 <h2>Do learn code</h2>
 <p>Even if you won&rsquo;t code HTML, CSS or Javascript daily, having a better understanding of the more technical aspects of web design will definitely make you a more efficient designer.</p>
