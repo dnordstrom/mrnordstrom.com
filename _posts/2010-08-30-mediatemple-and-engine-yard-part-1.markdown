@@ -28,16 +28,16 @@ wordpress_url: http://www.mrnordstrom.com/?p=1281
 
 <p>On the other hand we have <a href="http://www.engineyard.com/">Engine Yard</a>. I was writing on Twitter the other day, trying to figure out if I should use Mongrel clusters with Apache or just install <a href="http://www.modrails.com/">Passenger</a>, as well as some other questions about Ruby and Rails. <a href="http://twitter.com/tmornini">@tmornini</a> from EngineYard replied recommending their <a href="http://www.engineyard.com/products/appcloud">AppCloud PaaS</a>.</p>
 
-<p>So I ask why I&rsquo;d go with their solution and told him I&rsquo;m pretty attached to MediaTemple. He replied, &ldquo;It&rsquo;s like getting a new puppy...you&rsquo;ll always love the old dog, but the puppy is wonderful in it&rsquo;s own special way. :-)&rdquo;, which I think is a delightful answer to my question. We continue discussing and he tells me the benefits of their hosting services????????I&rsquo;m actually pretty impressed.</p>
+<p>So I ask why I&rsquo;d go with their solution and told him I&rsquo;m pretty attached to MediaTemple. He replied, &ldquo;It&rsquo;s like getting a new puppy...you&rsquo;ll always love the old dog, but the puppy is wonderful in it&rsquo;s own special way. :-)&rdquo;, which I think is a delightful answer to my question. We continue discussing and he tells me the benefits of their hosting services&rsquo;I&rsquo;m actually pretty impressed.</p>
 
 <p>Finally he asks me to accept his gift of some trial time to try it out for myself and see if I like it. I love MediaTemple but since they disappointed me and @tmornini presented Engine Yard&rsquo;s services so enthusiastically, I accepted his offer. Just a few minutes later, I got a very friendly email from his colleague, containing access details for my new EngineYard account.</p>
 
-<p>Now that&rsquo;s how I want to be treated. We should learn from Engine Yard????????they&rsquo;ve just shown us a school book example of how to promote services in a delightful manner that people will remember and tell their friends about (like I do in this blog post.)</p>
+<p>Now that&rsquo;s how I want to be treated. We should learn from Engine Yard&rsquo;they&rsquo;ve just shown us a school book example of how to promote services in a delightful manner that people will remember and tell their friends about (like I do in this blog post.)</p>
 
 <h2>Conclusion</h2>
 
 <p>So how does the story end? Am I actually considering switching to Engine Yard after many years as a loyal MediaTemple fan? That&rsquo;s something we&rsquo;ll have to wait to find out.</p>
 
-<p>While I did get an account at EngineYard to trial their AppCloud service, I haven&rsquo;t yet used it. I&rsquo;ve logged in and had a look around????????the configuration interface is neat and simple????????but I need to try hosting and deploying a site before I can draw any further conclusions.</p>
+<p>While I did get an account at EngineYard to trial their AppCloud service, I haven&rsquo;t yet used it. I&rsquo;ve logged in and had a look around&rsquo;the configuration interface is neat and simple&rsquo;but I need to try hosting and deploying a site before I can draw any further conclusions.</p>
 
 <p>To be continued. Remember to <a href="http://www.twitter.com/mrnordstrom">follow me on Twitter</a> to get the test results as soon as they&rsquo;re published. Until then, have a great week!</p>

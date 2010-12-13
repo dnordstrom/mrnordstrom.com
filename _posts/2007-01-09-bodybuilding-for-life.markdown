@@ -15,7 +15,7 @@ Two years ago I was a completely different person than I am now. I was a smart k
 
 The sport of fitness, bodybuilding or whatever you want to call it is not just about growing big. Sure, on the surface it is. But underneath the surface lies a great journey where you search for answers about who you really are. A journey where you evolve and learn.
 
-You see, bodybuilding and fitness has changed my life in so many ways. In the beginning there was the obvious health benefits of working out. Not just my physical health, but also my mental health began to spike. My mind suddenly became a lot clearer. It was as if I had been walking around with a clouded mind all my life, and suddenly everything was crystal clear. Of course everything wasn????????t crystal clear, but that????????s how it felt.
+You see, bodybuilding and fitness has changed my life in so many ways. In the beginning there was the obvious health benefits of working out. Not just my physical health, but also my mental health began to spike. My mind suddenly became a lot clearer. It was as if I had been walking around with a clouded mind all my life, and suddenly everything was crystal clear. Of course everything wasn&rsquo;t crystal clear, but that&rsquo;s how it felt.
 
 After some months of working out five days a week, I began to see the sport though a different perspective. I began to love each training session. Working out suddenly became the greatest thing in the world for me, and not just because I saw physical results but because I began to think differently.
 
@@ -25,4 +25,4 @@ Above all this, working out has introduced me to inner peace. This is something 
 
 I can honestly say that most of the fitness models and bodybuilders I have had the privilege to talk to are some of the nicest people I have ever met. Even though some of these people look like they are the most dangerous people in the world, they are so nice, understanding and helpful.
 
-What I am trying to communicate is that working out can and will change lives. Don????????t believe everything you see, for appearences can be deceiving. Working out does not necessarily have to mean going to the gym, just taking a walk every now and then is a really good thing. But if you feel like taking the next step and buy and gym card, don????????t be scared or intimidated. We are all humans, aren????????t we?
+What I am trying to communicate is that working out can and will change lives. Don&rsquo;t believe everything you see, for appearences can be deceiving. Working out does not necessarily have to mean going to the gym, just taking a walk every now and then is a really good thing. But if you feel like taking the next step and buy and gym card, don&rsquo;t be scared or intimidated. We are all humans, aren&rsquo;t we?

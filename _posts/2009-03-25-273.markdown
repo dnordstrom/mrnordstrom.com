@@ -5,7 +5,7 @@ excerpt: ""
 wordpress_id: 273
 wordpress_url: http://www.mrnordstrom.com/?p=273
 ---
-<p>Stumbled upon this nice thread on SitePoint Forums the other day. Still haven????????t read through it all but it thought I????????d do some copy and pasting. It????????s a great forum and I dearly recommend it, though I suspect most of you already know about it.</p>
+<p>Stumbled upon this nice thread on SitePoint Forums the other day. Still haven&rsquo;t read through it all but it thought I&rsquo;d do some copy and pasting. It&rsquo;s a great forum and I dearly recommend it, though I suspect most of you already know about it.</p>
 
 <p>The question is; do you have a designer/artist, even artistic or architectural movement you consider to be a strong influence/inspiration for you?</p>
 

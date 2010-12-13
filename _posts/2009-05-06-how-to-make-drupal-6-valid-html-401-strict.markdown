@@ -28,14 +28,14 @@ $vars['styles'] = str_replace(&quot; /&gt;&quot;, &quot;&gt;&quot;, $vars['style
 
 [php]
 function drupal_get_html_head() {
-????????$output = &quot;&lt;meta http-equiv=\&quot;Content-Type\&quot; content=\&quot;text/html; charset=utf-8\&quot; /&gt;\n&quot;;
-????????return $output . drupal_set_html_head();
+&rsquo;$output = &quot;&lt;meta http-equiv=\&quot;Content-Type\&quot; content=\&quot;text/html; charset=utf-8\&quot; /&gt;\n&quot;;
+&rsquo;return $output . drupal_set_html_head();
 }
 
 function drupal_final_markup($content) {
-????????// Make sure that the charset is always specified as the first element of the
-????????// head region to prevent encoding-based attacks.
-????????return preg_replace('/&lt;head[^&gt;]*&gt;/i', &quot;\$0\n&lt;meta http-equiv=\&quot;Content-Type\&quot; content=\&quot;text/html; charset=utf-8\&quot; /&gt;&quot;, $content, 1);
+&rsquo;// Make sure that the charset is always specified as the first element of the
+&rsquo;// head region to prevent encoding-based attacks.
+&rsquo;return preg_replace('/&lt;head[^&gt;]*&gt;/i', &quot;\$0\n&lt;meta http-equiv=\&quot;Content-Type\&quot; content=\&quot;text/html; charset=utf-8\&quot; /&gt;&quot;, $content, 1);
 }
 [/php]
 
@@ -45,12 +45,12 @@ function drupal_final_markup($content) {
 
 [php]
 function mytheme_valid_imagecache($namespace, $path, $alt = '', $title = '', $attributes = NULL) {
-????????if (is_null($attributes)) {
-????????????????$attributes['class'] = 'imagecache imagecache-'. $namespace;
-????????} 
-????????$attributes = drupal_attributes($attributes);
-????????$imagecache_url = imagecache_create_url($namespace, $path);
-????????return '&lt;img src=&quot;'. $imagecache_url .'&quot; alt=&quot;'. check_plain($alt) .'&quot; title=&quot;'. check_plain($title) .'&quot; '. $attributes .'&gt;';
+&rsquo;if (is_null($attributes)) {
+&rsquo;&rsquo;$attributes['class'] = 'imagecache imagecache-'. $namespace;
+&rsquo;} 
+&rsquo;$attributes = drupal_attributes($attributes);
+&rsquo;$imagecache_url = imagecache_create_url($namespace, $path);
+&rsquo;return '&lt;img src=&quot;'. $imagecache_url .'&quot; alt=&quot;'. check_plain($alt) .'&quot; title=&quot;'. check_plain($title) .'&quot; '. $attributes .'&gt;';
 }
 [/php]
 
