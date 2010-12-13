@@ -44,7 +44,7 @@ wordpress_url: http://www.mrnordstrom.com/?p=752
 
 <p>If some products are missing or the site seems different from the old one, reindex the catalog.</p>
 
-<h2>Potential problem: Prices always display excluding taxes</h2>
+<h2>Potential problem: Prices always display excl. taxes</h2>
 
 <p>This can occur when upgrading to Magento 1.4. You&rsquo;ve set the configuration to include taxes in all the prices but they still display without taxes on the front-end. What you need to do is to set the Origin on the Shipping Options page in the site configuration.</p>
 
