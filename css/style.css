@@ -437,11 +437,12 @@ article h2 {
 }
 
 article h3 {
-  font-size: 1.1em;
   margin: 1.6em 0 0.5em;
 }
 
 article h4 {
+  font-weight: normal;
+  text-decoration: underline;
   margin: 1.6em 0 0.5em;
 }
 
