@@ -29,7 +29,7 @@ wordpress_url: http://www.mrnordstrom.com/?p=752
 
 <p>Why not update Magento to the latest version while you are still poking around? You can use the Magento Connect downloader or if you prefer (or can&rsquo;t access the site via a browser yet) you can run the following commands on your server:</p>
 
-{% highlight ruby %}
+{% highlight bash %}
 namespace :deploy do
   task :start do ; end
   task :stop do ; end
