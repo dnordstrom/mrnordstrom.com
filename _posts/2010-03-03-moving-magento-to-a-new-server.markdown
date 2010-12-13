@@ -29,8 +29,10 @@ wordpress_url: http://www.mrnordstrom.com/?p=752
 
 <p>Why not update Magento to the latest version while you are still poking around? You can use the Magento Connect downloader or if you prefer (or can&rsquo;t access the site via a browser yet) you can run the following commands on your server:</p>
 
-<p>./pear mage-setup .
-./pear install magento-core/Mage_All_Latest</p>
+{% highlight bash %}
+./pear mage-setup .
+./pear install magento-core/Mage_All_Latest
+{% endhighlight %}
 
 <p>That should also do any required updates on the database. If you ever import a Magento 1.3 database to a Magento 1.4 installation, run the commands again to make sure the structure is correct.</p>
 
