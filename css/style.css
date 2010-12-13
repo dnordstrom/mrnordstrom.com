@@ -324,6 +324,8 @@ header[role="banner"] section .photo {
   padding: 0;
   position: relative;
   -moz-transform: rotate(-6deg);
+  -webkit-transform: rotate(-6deg);
+  transform: rotate(-6deg);
   width: 165px;
 }
 
