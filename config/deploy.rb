@@ -32,6 +32,7 @@ namespace :deploy do
     # run "#{try_sudo} /etc/init.d/httpd restart" # Restart Apache
     run "rm -rf #{deploy_to}/shared/_site && mkdir #{deploy_to}/shared/_site && ln -nfs #{shared_path}/_site #{release_path}/_site" # Remove old site
     run "cd #{release_path} && jekyll" # Reload Jekyll
+    run "cp #{release_path}/.htaccess #{shared_path}/_site/.htaccess" # Copy .htaccess file
   end
   
   task :set_permissions, :roles => :app do
