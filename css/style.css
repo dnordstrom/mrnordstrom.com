@@ -162,7 +162,7 @@ h1 time {
 }
 
 article {
-  margin: 0 0 75px;
+  margin: 0 0 1.4em;
 }
 
 article h1 {
@@ -238,4 +238,49 @@ article header p {
 
 footer ul {
   list-style: none;
+}
+
+/* Comments */
+
+aside {
+  margin: 75px 0 0;
+}
+
+#comments:target {
+  display: block;
+}
+
+#comments {
+  display: none;
+}
+
+body > a[href="#comments"] {
+  display: block;
+  margin: 60px 0;
+  opacity: 0.25;
+}
+
+body #idc-container .idc-trackbacks,
+body #idc-container .idc-comments {
+    margin: 0 0 5em;
+}
+
+body #idc-container div.idc-text_noresize,
+body #idc-container textarea.idc-text_noresize,
+body #idc-container .idc-text {
+  background: #fff;
+  padding: 5px 3px;
+}
+
+body #idc-container .idc-c-m .idc-form-info {
+  font-style: normal;
+}
+
+body #idc-container.idc .idc-c-b {
+  margin-top: 75px;
+}
+
+body #idc-container div h3,
+body #idc-container div h3 span {
+  font-weight: bold;
 }
