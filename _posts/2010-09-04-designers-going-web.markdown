@@ -10,14 +10,14 @@ wordpress_url: http://www.mrnordstrom.com/?p=1297
 <h2>Do look for inspiration</h2>
 <p>If you have little experience with designing for the web, it&rsquo;s a good idea to have a look at the work of people who do. &ldquo;Trends&rdquo; are bullshit so don&rsquo;t focus too much on trying to find out what&rsquo;s fashionable. Instead gather ideas. When you find something interesting, figure out how it was done.</p>
 
-<a href="http://dribbble.com/">Dribbble</a>
+<a href="http://dribbble.com/">Dribbble</a><br>
 <a href="http://www.behance.net/?field=102&amp;network=&amp;curator=&amp;content=projects&amp;sort=&amp;time=all">Behance Network</a>
 
 <h2>Do learn code</h2>
 <p>Even if you won&rsquo;t code HTML, CSS or Javascript daily, having a better understanding of the more technical aspects of web design will definitely make you a more efficient designer.</p>
 
 <p>
-<a href="http://www.google.com/search?hl=sv&amp;q=html+4.01+strict+tutorial&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=">HTML 4.01</a>
+<a href="http://www.google.com/search?hl=sv&amp;q=html+4.01+strict+tutorial&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=">HTML 4.01</a><br>
 <a href="http://www.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">HTML5</a>
 </p>
 
@@ -25,8 +25,8 @@ wordpress_url: http://www.mrnordstrom.com/?p=1297
 <p>Web design is a rapidly changing business so stay up-to-date&mdash;it may take more effort than it seems.</p>
 
 <p>
-<a href="http://www.sitepoint.com/">SitePoint</a>
-<a href="http://news.google.com/news/search?pz=1&amp;cf=all&amp;hl=en&amp;q=web+design">Google News</a>
+<a href="http://www.sitepoint.com/">SitePoint</a><br>
+<a href="http://news.google.com/news/search?pz=1&amp;cf=all&amp;hl=en&amp;q=web+design">Google News</a><br>
 Use <a href="http://www.google.com/reader/">Google Reader</a>
 </p>
 
@@ -54,11 +54,11 @@ Use <a href="http://www.google.com/reader/">Google Reader</a>
 
 <h2>Resources</h2>
 <p>
-<a href="http://ilovetypography.com/">I Love Typography</a>
-<a href="http://www.alistapart.com/articles/">A List Apart</a>
-<a href="http://ignorethecode.net/blog/">Ignore The Code</a>
-<a href="http://www.usabilitypost.com/">Usability Post</a>
-<a href="http://stuffandnonsense.co.uk/blog">Stuff &amp; Nonsense</a>
+<a href="http://ilovetypography.com/">I Love Typography</a><br>
+<a href="http://www.alistapart.com/articles/">A List Apart</a><br>
+<a href="http://ignorethecode.net/blog/">Ignore The Code</a><br>
+<a href="http://www.usabilitypost.com/">Usability Post</a><br>
+<a href="http://stuffandnonsense.co.uk/blog">Stuff &amp; Nonsense</a><br>
 <a href="http://css-tricks.com/">CSS Tricks</a>
 </p>
 
