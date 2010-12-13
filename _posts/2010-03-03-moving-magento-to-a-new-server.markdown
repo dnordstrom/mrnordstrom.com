@@ -29,9 +29,22 @@ wordpress_url: http://www.mrnordstrom.com/?p=752
 
 <p>Why not update Magento to the latest version while you are still poking around? You can use the Magento Connect downloader or if you prefer (or can&rsquo;t access the site via a browser yet) you can run the following commands on your server:</p>
 
-{% highlight bash %}
-./pear mage-setup .
-./pear install magento-core/Mage_All_Latest
+{% highlight ruby %}
+namespace :deploy do
+  task :start do ; end
+  task :stop do ; end
+  task :restart, :roles => :app, :except => { :no_release => true } do
+    # run "#{try_sudo} /etc/init.d/httpd restart" # Restart Apache
+    run "rm -rf #{deploy_to}/shared/_site && mkdir #{deploy_to}/shared/_site && ln -nfs #{shared_path}/_site #{release_path}/_site" # Remove old site
+    run "cd #{release_path} && jekyll" # Reload Jekyll
+  end
+  
+  task :set_permissions, :roles => :app do
+    run "chown -R apache #{deploy_to}/releases"
+    run "chown -R apache #{deploy_to}/httpdocs"
+    run "chown -R apache #{deploy_to}/shared/_site"
+  end
+end
 {% endhighlight %}
 
 <p>That should also do any required updates on the database. If you ever import a Magento 1.3 database to a Magento 1.4 installation, run the commands again to make sure the structure is correct.</p>
