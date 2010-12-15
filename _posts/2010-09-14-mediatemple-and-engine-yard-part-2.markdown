@@ -4,6 +4,7 @@ title: MediaTemple and Engine Yard, part 2
 excerpt: ""
 wordpress_id: 1305
 wordpress_url: http://www.mrnordstrom.com/?p=1305
+font_size: 0.8
 ---
 <p>The dust has settled and the times have changed. Well, maybe not so much but it has been a while since my post on MediaTemple and Engine Yard, about which one to choose for the long-term.</p>
 <!--more-->

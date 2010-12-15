@@ -99,31 +99,31 @@ header[role="banner"] section {
 }
 
 header[role="banner"] section .photo {
-  -moz-border-radius: 50px 100px 50px 100px;
-  -webkit-border-radius: 50px 100px 50px 100px;
-  border-radius: 50px 100px 50px 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
   -moz-box-shadow: 7px 6px 0 #59A80F;
   -webkit-box-shadow: 7px 6px 0 #59A80F;
   box-shadow: 7px 6px 0 #59A80F;
   background: url("images/me.png") no-repeat scroll left top white;
-  border: 12px solid #000;
+  border: 2px solid #000;
   float: left;
   height: 164px;
   padding: 0;
   position: relative;
-  -moz-transform: rotate(-6deg);
-  -webkit-transform: rotate(-6deg);
-  transform: rotate(-6deg);
+  -moz-transform: rotate(-12deg);
+  -webkit-transform: rotate(-12deg);
+  transform: rotate(-12deg);
   width: 165px;
 }
 
 header[role="banner"] section p {
-  -moz-border-radius: 20px 20px 20px 20px;
-  -webkit-border-radius: 20px 20px 20px 20px;
-  border-radius: 20px 20px 20px 20px;
-  -moz-box-shadow: 5px 6px 0 #000;
-  -webkit-box-shadow: 5px 6px 0 #000;
-  box-shadow: 5px 6px 0 #000;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  -moz-box-shadow: 1px 2px 0 #000;
+  -webkit-box-shadow: 1px 2px 0 #000;
+  box-shadow: 1px 2px 0 #000;
   background: #FF0F95;
   color: #fff;
   float: left;
@@ -155,6 +155,7 @@ header[role="banner"] section p:after {
 
 section[role="main"] {
   clear: both;
+  /*font-size: 0.8em;*/
 }
 
 h1 time {
@@ -162,7 +163,7 @@ h1 time {
 }
 
 article {
-  margin: 0 0 1.4em;
+  margin: 0 0 4em;
 }
 
 article h1 {

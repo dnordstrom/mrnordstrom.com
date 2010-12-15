@@ -6,16 +6,17 @@
   <article>
     <header>
       <h1>{{ page.title }}</h1>
-      <p>&rarr; by Daniel Nordstrom, {{ page.date | date_to_long_string }}</p>
+      <p>Written on a late {{ page.date | date: "%A" }} evening, posted on {{ page.date | date: "%B %d, %Y" }}.</p>
     </header>
     {{ content }}
     <p>
       <a href="#comments">Leave a comment</a> or <a href="http://twitter.com/share?url=http://mrnordstrom.com{{ page.url | escape }}">share this</a> on Twitter.
     </p>
+    
+    {% include signature.html %}
+    
   </article>
 </section>
-  
-{% include signature.html %}
 
 {% include comments.html %}
 
