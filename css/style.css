@@ -43,7 +43,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-family: LeagueGothic, Helvetica, sans-serif;
   font-size: 2.5em;
 }
@@ -83,6 +83,7 @@ header[role="banner"] h1 {
   -webkit-transform: rotate(-6deg);
   -o-transform: rotate(-6deg);
   transform: rotate(-6deg);
+  text-transform: lowercase;
 }
 
 header[role="banner"] h1 b {
@@ -102,9 +103,9 @@ header[role="banner"] section .photo {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
-  -moz-box-shadow: 7px 6px 0 #59A80F;
-  -webkit-box-shadow: 7px 6px 0 #59A80F;
-  box-shadow: 7px 6px 0 #59A80F;
+  -moz-box-shadow: 1px 3px 0 #59A80F;
+  -webkit-box-shadow: 1px 3px 0 #59A80F;
+  box-shadow: 1px 3px 0 #59A80F;
   background: url("images/me.png") no-repeat scroll left top white;
   border: 2px solid #000;
   float: left;
@@ -160,17 +161,38 @@ section[role="main"] {
 
 h1 time {
   display: block;
+  font-size: 0.8em;
+  line-height: 0.8em;
 }
 
 article {
   margin: 0 0 4em;
 }
 
+.base article {
+  margin: 0 0 1em;
+}
+
 article h1 {
   font-size: 2.6em;
 }
 
-section[role="main"] article:nth-of-type(2) h1 {
+.base article h1 {
+  font-size: 2em;
+  letter-spacing: 0.01em;
+}
+
+.base aside {
+  float: left;
+  font-family: LeagueGothic;
+  font-size: 3.9em;
+  line-height: 62px;
+  margin: 0 0 10px;
+  text-align: center;
+  width: 50px;
+}
+
+/*section[role="main"] article:nth-of-type(2) h1 {
   font-size: 2.5em;
 }
 
@@ -204,7 +226,7 @@ section[role="main"] article:nth-of-type(9) h1 {
 
 section[role="main"] article:nth-of-type(10) h1 {
   font-size: 1.7em;
-}
+}*/
 
 h1 a:link,
 h1 a:visited,
@@ -238,7 +260,7 @@ article p {
 
 article header p {
   font-size: 0.8em;
-  margin-top: 2px;
+  margin-top: -3px;
 }
 
 footer ul {
