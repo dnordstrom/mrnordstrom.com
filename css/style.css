@@ -161,7 +161,7 @@ section[role="main"] {
 
 h1 time {
   display: block;
-  font-size: 0.8em;
+  font-size: 0.7em;
   line-height: 0.8em;
 }
 
@@ -170,7 +170,7 @@ article {
 }
 
 .base article {
-  margin: 0 0 1em;
+  margin: 0 0 2em;
 }
 
 article h1 {
@@ -192,47 +192,21 @@ article h1 {
   width: 50px;
 }
 
-/*section[role="main"] article:nth-of-type(2) h1 {
-  font-size: 2.5em;
-}
-
-section[role="main"] article:nth-of-type(3) h1 {
-  font-size: 2.4em;
-}
-
-section[role="main"] article:nth-of-type(4) h1 {
-  font-size: 2.3em;
-}
-
-section[role="main"] article:nth-of-type(5) h1 {
-  font-size: 2.2em;
-}
-
-section[role="main"] article:nth-of-type(6) h1 {
-  font-size: 2.1em;
-}
-
-section[role="main"] article:nth-of-type(7) h1 {
-  font-size: 2.0em;
-}
-
-section[role="main"] article:nth-of-type(8) h1 {
-  font-size: 1.9em;
-}
-
-section[role="main"] article:nth-of-type(9) h1 {
-  font-size: 1.8em;
-}
-
-section[role="main"] article:nth-of-type(10) h1 {
-  font-size: 1.7em;
-}*/
-
 h1 a:link,
 h1 a:visited,
 h1 a:active,
 h1 a:focus {
   color: #59A80F;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+h1 a:hover {
+  text-shadow: 2px 2px 0 #000;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 article h2 {
@@ -261,6 +235,49 @@ article p {
 article header p {
   font-size: 0.8em;
   margin-top: -3px;
+}
+
+article .thumb-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+}
+
+article .thumb-left {
+  float: left;
+}
+
+article .thumb-right img,
+article .thumb-left img {
+  display: block;
+}
+
+article .small {
+  width: 175px;
+}
+
+article .medium {
+  width: 250px;
+}
+
+article .large {
+  width: 400px;
+}
+
+article .thumb-right a,
+article .thumb-left a {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  display: block;
+  margin: 0;
+  padding: 7px;
+  text-decoration: none;
+}
+
+article .thumb-right a:hover,
+article .thumb-left a:hover {
+  border: 1px solid #59A80F;
 }
 
 footer ul {
