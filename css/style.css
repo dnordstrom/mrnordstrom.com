@@ -6,7 +6,7 @@
  */
 
 html {
-  background: #FBFCED;
+  background: #f0f0d4;
 }
 
 body {
@@ -203,7 +203,7 @@ h1 a:focus {
 }
 
 h1 a:hover {
-  text-shadow: 2px 2px 0 #000;
+  text-shadow: 1px 2px 0 #000;
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -225,10 +225,12 @@ article h4 {
 }
 
 p {
-  margin-bottom: 1.45em;
+  margin-bottom: 1.8em;
 }
 
 article p {
+  font-size: 0.95em;
+  line-height: 1.5em;
   text-shadow: 0 2px 0 #fff;
 }
 
@@ -285,14 +287,29 @@ footer ul {
 }
 
 blockquote {
-  background: #fff;
-  font-size: 0.9em;
-  font-style: italic;
-  margin-left: -30px;
+  background: #444;
+  -webkit-border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-bottomright: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-size: 0.85em;
+  margin: 0 50px 0 -80px;
 }
 
 blockquote p {
-  padding: 5px 15px 5px 30px;
+  color: #FFFFFF;
+  line-height: 1.6em;
+  padding: 18px 40px 18px 35px;
+  text-shadow: 0 2px 0 #000000;
+}
+
+blockquote > p > a:link,
+blockquote > p > a:active,
+blockquote > p > a:visited,
+blockquote > p > a:focus {
+  color: #fff;
 }
 
 /* Comments */
@@ -306,7 +323,7 @@ aside {
 }
 
 #comments {
-  display: none;
+  /*display: none;*/
 }
 
 body > a[href="#comments"] {
@@ -347,4 +364,20 @@ body #idc-container.idc .idc-c-b {
 body #idc-container div h3,
 body #idc-container div h3 span {
   font-weight: bold;
+}
+
+body .dsq-brlink {
+  display: none;
+}
+
+body #dsq-content .dsq-item-trackback {
+  display: none;
+}
+
+body #dsq-content .dsq-item-sort {
+  display: none;
+}
+
+body #dsq-content .dsq-attach-media {
+  display: none;
 }
