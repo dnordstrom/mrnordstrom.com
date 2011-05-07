@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Mr. Nordstrom - Web Design / Development / Production</title>
+ <title>Mr. Nordstrom - Amsterdam Web Design / Development / Production</title>
  <link href="http://mrnordstrom.com/rss.xml" rel="self"/>
  <link href="http://mrnordstrom.com.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
