@@ -2,7 +2,7 @@
 # Application
 ##
 set :application, "mrnordstrom.com"
-set :repository,  "ssh://root@niroot.com/var/www/git/mrnordstrom.com.git"
+set :repository,  "ssh://dnordstrom@niroot.com/var/www/git/mrnordstrom.com.git"
 
 ##
 # Servers
