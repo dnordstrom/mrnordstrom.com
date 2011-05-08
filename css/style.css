@@ -109,7 +109,7 @@ header[role="banner"] nav a:hover {
 
 header[role="banner"] h1 {
   color: #4B7023;
-  margin: -40px 0 0 35px;
+  margin: 0 0 -40px 35px;
   -moz-transform: rotate(-6deg);
   -webkit-transform: rotate(-6deg);
   -o-transform: rotate(-6deg);
@@ -117,6 +117,7 @@ header[role="banner"] h1 {
   text-transform: lowercase;
   z-index: 100;
   position: relative;
+  width: 300px;
 }
 
 header[role="banner"] h1 a:link,
@@ -205,7 +206,7 @@ article {
 }
 
 .base article {
-  margin: 0 0 2em;
+  margin: 0;
 }
 
 article h1 {
@@ -227,6 +228,78 @@ article h1 {
   width: 50px;
 }
 
+.tags {
+  height: 3em;
+}
+
+article:hover .tags a {
+  display: block;
+}
+
+.tags a:link,
+.tags a:visited,
+.tags a:active,
+.tags a:focus {
+  cursor: default;
+  border-radius: 5px;
+  color: #fff;
+  display: none;
+  font-family: Prociono, "Courier New", Arial, "Myriad Pro", ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+  float: left;
+  background: #FF0F95;
+  margin: 0 10px 0 0;
+  padding: 4px 6px 5px;
+  font-size: 0.55em;
+  line-height: 1em;
+  text-shadow: 1px 1px 0 #696969;
+  text-decoration: none;
+  box-shadow: 1px 1px 0 #777, 2px 2px 3px #fff;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.17, rgb(181,11,110)),
+      color-stop(0.97, rgb(255,64,169)),
+      color-stop(0.97, rgb(255,61,171))
+  );
+  background-image: -moz-linear-gradient(
+      center bottom,
+      rgb(181,11,110) 17%,
+      rgb(255,64,169) 97%,
+      rgb(255,61,171) 97%
+  );
+  background-image: gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.17, rgb(181,11,110)),
+      color-stop(0.97, rgb(255,64,169)),
+      color-stop(0.97, rgb(255,61,171))
+  );
+}
+
+/* Disabled until tag filters has been set up
+article:hover .tags a:hover {
+  opacity: 1;
+  padding: 5px 6px 4px;
+  box-shadow: 1px 1px 0 #555, -1px -1px 3px #fff;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.03, rgb(255,61,171)),
+      color-stop(0, rgb(255,64,169)),
+      color-stop(0.97, rgb(194,24,123))
+  );
+  background-image: -moz-linear-gradient(
+      center bottom,
+      rgb(255,61,171) 3%,
+      rgb(255,64,169) 0%,
+      rgb(194,24,123) 97%
+  );
+}
+*/
+
 h1 a:link,
 h1 a:visited,
 h1 a:active,
@@ -236,7 +309,12 @@ h1 a:focus {
 }
 
 h1 a:hover {
-  text-shadow: 1px 1px 0 #000;
+  text-shadow: 1px 1px 0 #666;
+}
+
+
+h1 a:active {
+  text-shadow: 2px 2px 0 #777;
 }
 
 article h2 {
