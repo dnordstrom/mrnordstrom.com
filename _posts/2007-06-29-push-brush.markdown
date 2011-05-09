@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Push & Brush
+title: Push &amp; Brush
 excerpt: ""
 wordpress_id: 52
 wordpress_url: http://www.mrnordstrom.com/2007/06/29/push-brush/
