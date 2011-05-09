@@ -288,8 +288,19 @@ article h1 {
   height: 3em;
 }
 
+header .tags {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+}
+
+header:hover .tags {
+  opacity: 1;
+  margin: 0 0 0 16px;
+}
+
 header:hover .tags a {
-  display: block;
   opacity: 1;
 }
 
@@ -297,20 +308,20 @@ header:hover .tags a {
 .tags a:visited,
 .tags a:active,
 .tags a:focus {
-  -webkit-transition: opacity 0.3s ease-in;
-  -moz-transition: opacity 0.3s ease-in;
-  transition: opacity 0.3s ease-in;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
   color: #fff;
   display: block;
-  opacity: 0;
   font-family: Arial, sans-serif;
   float: left;
   background: #FF0F95;
   margin: 0 10px 0 0;
   padding: 4px 6px 5px;
+  opacity: 0;
   font-size: 0.52em;
   line-height: 1em;
   text-shadow: 1px 1px 0 #555;
