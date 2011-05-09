@@ -126,6 +126,9 @@ header[role="banner"] h1 a:active,
 header[role="banner"] h1 a:focus {
   color: #FF0F95;
   text-shadow: 1px 2px 0 #000;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 header[role="banner"] h1 a:hover {
@@ -190,9 +193,61 @@ header[role="banner"] section p {
   margin: 0 0 22px;
 }
 
+#feed {
+  position: absolute;
+  bottom: 11px;
+  right: 10px;
+  background: #FF8A0D;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.25, rgb(201,104,8)),
+      color-stop(0.79, rgb(255,138,13)),
+      color-stop(0.78, rgb(255,138,13))
+  );
+  background-image: -moz-linear-gradient(
+      center bottom,
+      rgb(201,104,8) 25%,
+      rgb(255,138,13) 79%,
+      rgb(255,138,13) 78%
+  );
+  display: block;
+  z-index: 100;
+  font-family: Arial, sans-serif;
+  font-size: 0.52em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 0 #696969;
+  padding: 3px 5px 4px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  box-shadow: 1px 1px 0 #777;
+}
+
+#feed:hover {
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.75, rgb(201,104,8)),
+      color-stop(0, rgb(255,138,13)),
+      color-stop(0, rgb(255,138,13))
+  );
+  background-image: -moz-linear-gradient(
+      center bottom,
+      rgb(201,104,8) 75%,
+      rgb(255,138,13) 0%,
+      rgb(255,138,13) 0%
+  );
+  padding: 4px 5px 3px;
+}
+
 section[role="main"] {
   padding: 300px 0 0;
-  margin: 0 0 0 80px;
+  margin: 0 0 80px 80px;
   width: 32em;
 }
 
@@ -242,7 +297,11 @@ header:hover .tags a {
 .tags a:visited,
 .tags a:active,
 .tags a:focus {
-  -webkit-transition: all 0.3s ease-in;
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
   color: #fff;
   display: block;
@@ -281,9 +340,7 @@ header:hover .tags a {
   );
 }
 
-/* Disabled until tag filters has been set up
 article:hover .tags a:hover {
-  opacity: 1;
   padding: 5px 6px 4px;
   box-shadow: 1px 1px 0 #555, -1px -1px 3px #fff;
   background-image: -webkit-gradient(
@@ -301,7 +358,6 @@ article:hover .tags a:hover {
       rgb(194,24,123) 97%
   );
 }
-*/
 
 h1 a:link,
 h1 a:visited,
@@ -323,16 +379,19 @@ h1 a:active {
 article h2 {
   font-size: 1.3em;
   margin: 1.6em 0 0.5em;
+  text-shadow: 0 2px 0 #fff;
 }
 
 article h3 {
   margin: 1.6em 0 0.5em;
+  text-shadow: 0 2px 0 #fff;
 }
 
 article h4 {
   font-weight: normal;
   text-decoration: underline;
   margin: 1.6em 0 0.5em;
+  text-shadow: 0 2px 0 #fff;
 }
 
 p {

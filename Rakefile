@@ -27,7 +27,7 @@ title: "Tagged: #{tag}"
       </h1>
       <div class="tags">
         {% for tag in post.tags %}
-          <a href="#">{{ tag }}</a>
+          <a href="/tags/{{ tag }}">{{ tag }}</a>
         {% endfor %}
       </div>
     </header>
