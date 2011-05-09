@@ -29,9 +29,8 @@ namespace :deploy do
   task :start do ; end
   task :stop do ; end
   task :restart, :roles => :app, :except => { :no_release => true } do
-    # run "#{try_sudo} /etc/init.d/httpd restart" # Restart Apache
-    run "rm -rf #{deploy_to}/shared/_site && mkdir #{deploy_to}/shared/_site && ln -nfs #{shared_path}/_site #{release_path}/_site" # Remove old site
-    run "cd #{release_path} && jekyll" # Reload Jekyll
+    run "rm -rf #{deploy_to}/shared/_site && mkdir #{deploy_to}/shared/_site && ln -nfs #{shared_path}/_site #{release_path}/_site"
+    run "cd #{release_path} && jekyll"
   end
   
   task :set_permissions, :roles => :app do
@@ -41,7 +40,7 @@ namespace :deploy do
   end
   
   task :create_tags, :roles => :app do
-    run "cd #{release_path} && jekyll" # Reload Jekyll
+    run "cd #{release_path} && rake tags"
   end
 end
 
