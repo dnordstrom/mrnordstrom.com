@@ -39,7 +39,12 @@ namespace :deploy do
     run "chown -R apache #{deploy_to}/httpdocs"
     run "chown -R apache #{deploy_to}/shared/_site"
   end
+  
+  task :create_tags, :roles => :app do
+    run "cd #{release_path} && jekyll" # Reload Jekyll
+  end
 end
 
+after "deploy:finalize_update", "deploy:create_tags"
 after "deploy:finalize_update", "deploy:restart"
 after "deploy:finalize_update", "deploy:set_permissions"
