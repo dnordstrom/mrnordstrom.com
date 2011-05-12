@@ -306,11 +306,12 @@ header .tags {
   -moz-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   opacity: 0;
+  margin: 4px 0 0 0;
 }
 
 header:hover .tags {
   opacity: 1;
-  margin: 0 0 0 16px;
+  margin: 4px 0 0 16px;
 }
 
 header:hover .tags a {
