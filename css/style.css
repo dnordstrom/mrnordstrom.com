@@ -35,6 +35,10 @@ a:hover {
   text-decoration: underline;
 }
 
+em {
+  padding-right: 2px;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-weight: bold;
   line-height: 1em;
@@ -266,8 +270,17 @@ article {
 }
 
 article h1 {
-  font-size: 2.6em;
+  font-size: 2.62em;
 }
+
+article h2 {
+  font-size: 1.4em;
+}
+
+article h3 {
+  font-size: 1.1em;
+}
+
 
 .base article h1 {
   font-size: 2em;
@@ -394,25 +407,66 @@ article h2 {
 }
 
 article h3 {
+  font-size: 1.1em;
   margin: 1.6em 0 0.5em;
   text-shadow: 0 2px 0 #fff;
 }
 
 article h4 {
+  line-height: 1.5em;
+  margin: 1.6em 0 0.5em;
+  text-shadow: 0 2px 0 #fff;
+}
+
+article h5 {
+  line-height: 1.5em;
   font-weight: normal;
   text-decoration: underline;
   margin: 1.6em 0 0.5em;
   text-shadow: 0 2px 0 #fff;
 }
 
+article li h4,
+article li h5 {
+  margin-top: 0;
+}
+
 p {
   margin-bottom: 1.8em;
 }
 
-article p {
+article p,
+article li,
+article dd,
+article dt {
   font-size: 0.95em;
   line-height: 1.5em;
   text-shadow: 0 2px 0 #fff;
+}
+
+article ul,
+article ol,
+article dl {
+  list-style-type: square;
+  margin: 1.2em 0 1.8em 0em;
+}
+
+article ul p,
+article ol p,
+article dl p {
+  margin: 0 0 1em 1.62em;
+  font-size: 0.9em;
+}
+
+article li h1,
+article li h2,
+article li h3,
+article li h4 {
+  margin: 0;
+}
+
+article li {
+  margin-bottom: 0.6em;
 }
 
 article header p {
@@ -558,6 +612,60 @@ body #dsq-content .dsq-item-sort {
 
 body #dsq-content .dsq-attach-media {
   display: none;
+}
+
+/* Post images */
+
+article img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 4px;
+  -webkit-box-shadow: 0 0 6px #ddd;
+  -moz-box-shadow: 0 0 6px #ddd;
+  box-shadow: 0 0 6px #ddd;
+  margin: 0 20px 20px;
+}
+
+.image-link:hover img {
+  border: 2px solid #FF0F95;
+  padding: 3px;
+}
+
+.image-link:link,
+.image-link:active,
+.image-link:focus,
+.image-link:visited,
+.image-link:hover {
+  text-decoration: none;
+}
+
+.align-left {
+  float: left;
+  margin-left: 0;
+}
+
+.align-right {
+  float: right;
+  margin-right: 0;
+}
+
+.transparent {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.image-link:hover .transparent {
+  border: none;
 }
 
 /* Cats page */
