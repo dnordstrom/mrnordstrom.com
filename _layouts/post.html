@@ -5,6 +5,11 @@
 <section class="post" role="main">
   <article>
     <header>
+      <div class="tags">
+        {% for tag in page.tags %}
+          <a href="/tags/{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
       <h1>{{ page.title }}</h1>
       <p>Written on a late {{ page.date | date: "%A" }} evening, posted on {{ page.date | date: "%B %d, %Y" }}.</p>
     </header>

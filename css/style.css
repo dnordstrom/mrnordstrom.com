@@ -250,7 +250,7 @@ header[role="banner"] section p {
 }
 
 section[role="main"] {
-  padding: 300px 0 0;
+  padding: 275px 0 0;
   margin: 0 0 80px 80px;
   width: 32em;
 }
@@ -309,12 +309,19 @@ header .tags {
   margin: 4px 0 0 0;
 }
 
+.post header .tags {
+  height: 1.6em;
+  opacity: 1;
+  padding: 1em 0 0 0;
+}
+
 header:hover .tags {
   opacity: 1;
   margin: 4px 0 0 16px;
 }
 
-header:hover .tags a {
+header:hover .tags a,
+.post header:hover .tags a {
   opacity: 1;
 }
 
@@ -363,6 +370,13 @@ header:hover .tags a {
       color-stop(0.97, rgb(255,64,169)),
       color-stop(0.97, rgb(255,61,171))
   );
+}
+
+.post .tags a:link,
+.post .tags a:visited,
+.post .tags a:active,
+.post .tags a:focus {
+  opacity: 0.3;
 }
 
 article:hover .tags a:hover {
