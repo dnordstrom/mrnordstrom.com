@@ -58,10 +58,11 @@ h1 a:focus {
 }
 
 header[role="banner"] {
-  line-height: 0.6em;
+  line-height: 0.75em;
   position: fixed;
   width: 100%;
   overflow: hidden;
+  font-size: 0.85em;
 }
 
 header[role="banner"] #header-wrapper {
@@ -113,7 +114,7 @@ header[role="banner"] nav a:hover {
 
 header[role="banner"] h1 {
   color: #4B7023;
-  margin: 0 0 -40px 35px;
+  margin: -6px 0 -75px 35px;
   -moz-transform: rotate(-6deg);
   -webkit-transform: rotate(-6deg);
   -o-transform: rotate(-6deg);
@@ -149,7 +150,7 @@ header[role="banner"] h1 b {
 
 header[role="banner"] nav {
   display: inline-block;
-  margin: 0 0 18px 28px;
+  margin: 0 0 12px 28px;
   z-index: 200;
   position: relative;
 }
@@ -170,7 +171,7 @@ header[role="banner"] .photo {
   -moz-box-shadow: 0 0 20px #111;
   -webkit-box-shadow: 0 0 20px #111;
   box-shadow: 25px -30px 0 rgba(0, 0, 0, 0.35), 35px 35px 0 rgba(0, 0, 0, 0.3), -55px 10px 0 rgba(0, 0, 0, 0.15);
-  background: url("images/me.png") no-repeat scroll left top white;
+  background: url("images/me.png") no-repeat scroll left 20px white;
   border: 1px solid #000;
   height: 164px;
   padding: 0;
@@ -186,7 +187,7 @@ header[role="banner"] .photo {
 header[role="banner"] section {
   color: #fff;
   display: inline-block;
-  margin: 25px 0 0 50px;
+  margin: 0 0 0 50px;
   padding: 14px 0 0 18px;
   width: 310px;
   position: relative;
@@ -194,7 +195,7 @@ header[role="banner"] section {
 }
 
 header[role="banner"] section p {
-  margin: 0 0 22px;
+  margin: 0;
 }
 
 #feed {
