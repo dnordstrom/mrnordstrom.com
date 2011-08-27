@@ -258,7 +258,7 @@ section[role="main"] {
 
 h1 time {
   display: block;
-  font-size: 0.7em;
+  font-size: 1.4em;
   line-height: 0.8em;
 }
 
@@ -284,8 +284,40 @@ article h3 {
 
 
 .base article h1 {
-  font-size: 2em;
+  position: relative;
+  font-size: 1em;
   letter-spacing: 0.01em;
+}
+
+.base article h1 a {
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+.base article h1.featured,
+.base article h1.quickie {
+  font-size: 1em;
+}
+
+.base article h1.featured a {
+  font-size: 2.5em;
+  line-height: 1.2em;
+}
+
+.base article h1.quickie a {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+.featured_label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  transform: rotate(20deg);
+  color: #FF0F95;
 }
 
 .base aside {

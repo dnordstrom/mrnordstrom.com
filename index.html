@@ -5,8 +5,9 @@ title: Hello
 {% for post in site.posts limit:10 %}
   <article>
     <header>
-      <h1>
+      <h1 class="{{ post.type }}">
         <time datetime="{{ post.date }}" pubdate>{{ post.date | date_to_long_string }}</time>
+        <div class="featured_label">{{ post.type }}</div>
         <a href="{{ post.url }}">{{ post.title }}</a>
       </h1>
       <div class="tags">
