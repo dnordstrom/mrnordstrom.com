@@ -297,6 +297,9 @@ article h3 {
 .base article h1.featured,
 .base article h1.quickie {
   font-size: 1em;
+  display: block;
+  display: inline-block;
+  padding: 0 38px 0 0;
 }
 
 .base article h1.featured a {
