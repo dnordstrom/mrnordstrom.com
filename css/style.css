@@ -36,7 +36,9 @@ a:hover {
 }
 
 em {
-  padding-right: 2px;
+  padding: 1px 3px 2px;
+  font-style: normal;
+  background: #ff8;
 }
 
 h1,h2,h3,h4,h5,h6 {
