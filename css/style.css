@@ -23,6 +23,17 @@ pre {
   padding: 0 1.8em;
   white-space: pre-wrap;
 }
+
+code,
+pre {
+  font-family: Inconsolata, monospace;
+}
+
+p code {
+  padding: 4px 4px;
+  letter-spacing: -0.1em;
+}
+
 a:link,
 a:visited,
 a:active,
