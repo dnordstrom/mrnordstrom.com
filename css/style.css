@@ -27,11 +27,11 @@ pre {
 code,
 pre {
   font-family: Inconsolata, monospace;
+  letter-spacing: -0.1em;
 }
 
 p code {
   padding: 4px 4px;
-  letter-spacing: -0.1em;
 }
 
 a:link,
