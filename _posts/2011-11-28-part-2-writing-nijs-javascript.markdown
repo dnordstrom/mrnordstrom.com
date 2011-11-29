@@ -7,7 +7,7 @@ tags:
 - nijs
 - codereview
 ---
-[Last time](http://mrnordstrom.com/2011/11/27/part-1-writing-nijs-javascript/) we talked about JavaScript as a beautiful but often misunderstood language. Today we'll review our first piece of code; _a simple foundation_ we'll later add more features to. We'll start with just a few snippets, and the commented source is available in the [GitHub repository](https://github.com/dnordstrom/NI.JS).
+[Last time](http://mrnordstrom.com/2011/11/27/part-1-writing-nijs-javascript/) we talked about JavaScript as a beautiful but often misunderstood language. Today we'll review our first piece of code; _a simple foundation_ we'll later add more features to. We'll start with just a few snippets, simplified from the commented JSLint-valid source is available in the [GitHub repository](https://github.com/dnordstrom/NI.JS).
 
 You can find useful references at the bottom of this post.
 
@@ -27,11 +27,12 @@ Finally, as already mentioned, we are declaring NI as a `Function` instead of us
 
 {% highlight javascript %}
 
-if (typeof NI === "undefined") var NI = function() { };
+if (typeof NI === "undefined") var NI = function () { };
 // or
 if (typeof NI === "undefined") var NI = new Function();
-// or
-var NI = (typeof NI === "undefined") ? function() { } : NI;
+
+// This is the JSLint valid version used in the GitHub repository
+var NI = (typeof NI === "undefined") ? function () { "use strict"; } : NI;
 
 {% endhighlight %}
 
@@ -39,7 +40,7 @@ Let's move on to extending the NI object with our first library component---an o
 
 {% highlight javascript %}
 
-NI.prototype.JS = (function() {
+NI.prototype.JS = (function () {
   /* Core component goes here */
 }());
 
@@ -63,7 +64,7 @@ NI.prototype.JS = (function() {
   var self = { };
 
   /* Privileged */
-  self.find = function(element) {
+  self.find = function (element) {
     if (!document.getElementById) return false;
     return document.getElementById(element);
   }
@@ -89,7 +90,7 @@ NI.prototype.JS = (function() {
   
   return {
     /* Privileged */
-    find: function() {
+    find: function () {
       if(!document.getElementById) return false;
       return document.getElementById(element);
     }
@@ -108,6 +109,8 @@ A minor note; ideally, to be compatible with JSDoc Toolkit, we would comment our
 
 If we would run this through <a href="http://www.jslint.com/" title="JSLint">JSLint</a>, which I suggest you do with any JavaScript code you write, it would give errors. However, most of the errors reported have to do with spacing/indenting and the missing curly braces mentioned earlier---things we do intentionally.
 
+The GitHub repository mentioned in the first paragraph contains the JSLint-valid revision of this code, using the conventions listed below.
+
 That will be all for today---we now have a basic foundation to build upon. If you have any suggestions on how to improve the code or what to do next time, feel free to leave a comment!
 
 Conventions
@@ -119,6 +122,7 @@ Conventions
 * Always enclose a self-evoking function in parenthesis.
 * Separate public, privileged and private members for proper encapsulation.
 * Have one exit point per function, avoiding multiple return-statements.
+* Validate your code using <a href="http://www.jslint.com/" title="JSLint">JSLint</a>.
 
 Footnotes
 ---------
