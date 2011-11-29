@@ -7,7 +7,7 @@ tags:
 - nijs
 - codereview
 ---
-[Last time](http://mrnordstrom.com/2011/11/27/part-1-writing-nijs-javascript/) we talked about JavaScript as a beautiful but often misunderstood language. Today we'll review our first piece of code; _a simple foundation_ we'll later add more features to. We'll start with just a few snippets, simplified from the commented JSLint-valid source is available in the [GitHub repository](https://github.com/dnordstrom/NI.JS).
+[Last time](http://mrnordstrom.com/2011/11/27/part-1-writing-nijs-javascript/) we talked about JavaScript as a beautiful but often misunderstood language. Today we'll review our first piece of code; _a simple foundation_ we'll later add more features to. We'll start with just a few snippets, simplified from the commented JSLint-valid source available in the [GitHub repository](https://github.com/dnordstrom/NI.JS).
 
 You can find useful references at the bottom of this post.
 
