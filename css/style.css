@@ -515,6 +515,10 @@ article dl {
   margin: 1.2em 0 1.8em 0em;
 }
 
+article ol {
+  list-style-type: decimal;
+}
+
 article ul p,
 article ol p,
 article dl p {
