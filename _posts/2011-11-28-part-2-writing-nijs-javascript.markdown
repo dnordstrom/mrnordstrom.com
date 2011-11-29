@@ -73,7 +73,7 @@ NI.prototype.JS = (function() {
 
 {% endhighlight %}
 
-This is a pattern I like to use at the moment for instantiating our object. At the top of the self-evoking function we enable strict mode, instroduced in ECMAScript 5. I recommend reading up on strict mode and always using it, but this library will enable it on a per-object basis to keep it optional.
+This is a pattern I like to use at the moment for instantiating our object. At the top of the self-evoking function we enable strict mode, introduced in ECMAScript 5. I recommend reading up on strict mode and always using it, but this library will enable it on a per-object basis to keep it optional.
 
 Now to the more interesting parts, starting with a `var self = { };` declaration. At that point in the function, `self` is a private variable. However, the purpose of `self` is to be returned at the end of the function, effectively exposing it to the public. 
 
