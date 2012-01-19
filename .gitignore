@@ -1,0 +1,5 @@
+_site/
+config/*
+.DS_Store
+*.sw*
+*~

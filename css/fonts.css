@@ -1,0 +1,47 @@
+/*@font-face {
+  font-family: 'GoudyBookletter1911';
+  src: url('fonts/goudybookletter1911-webfont.eot');
+  src: local('☺'), url('fonts/goudybookletter1911-webfont.woff') format('woff'), url('fonts/goudybookletter1911-webfont.ttf') format('truetype'), url('fonts/goudybookletter1911-webfont.svg#webfontDXjc4KWX') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merge';
+  src: url('fonts/merge-webfont.eot');
+  src: local('☺'), url('fonts/merge-webfont.woff') format('woff'), url('fonts/merge-webfont.ttf') format('truetype'), url('fonts/merge-webfont.svg#webfontoxmRohIb') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PicoBlack';
+  src: url('fonts/picobla_-webfont.eot');
+  src: local('☺'), url('fonts/picobla_-webfont.woff') format('woff'), url('fonts/picobla_-webfont.ttf') format('truetype'), url('fonts/picobla_-webfont.svg#webfontGnxUAkuv') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+@font-face {
+	font-family: 'LeagueGothic';
+	src: url('fonts/leaguegothic-webfont.eot');
+	src: local('☺'), url('fonts/leaguegothic-webfont.woff') format('woff'), url('fonts/leaguegothic-webfont.ttf') format('truetype'), url('fonts/leaguegothic-webfont.svg#webfontsLgfR0bS') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Prociono';
+	src: url('fonts/prociono-webfont.eot');
+	src: local('☺'), url('fonts/prociono-webfont.woff') format('woff'), url('fonts/prociono-webfont.ttf') format('truetype'), url('fonts/prociono-webfont.svg#webfontfsb8o6D7') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inconsolata';
+	src: url('fonts/inconsolata-webfont.eot');
+	src: local('☺'), url('fonts/inconsolata-webfont.woff') format('woff'), url('fonts/inconsolata-webfont.ttf') format('truetype'), url('fonts/inconsolata-webfont.svg#webfontfsb8o6D7') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
