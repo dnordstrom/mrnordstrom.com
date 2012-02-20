@@ -13,7 +13,7 @@ body {
   font-size: 1.2em;
   font-family: Prociono, Georgia, serif;
   line-height: 1.45em;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
 }
 
 pre {
@@ -50,6 +50,7 @@ em {
   padding: 1px 3px 2px;
   font-style: normal;
   background: #ff8;
+  text-shadow: none;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -505,7 +506,7 @@ article dd,
 article dt {
   font-size: 0.95em;
   line-height: 1.5em;
-  text-shadow: 0 2px 0 #fff;
+  text-shadow: 1px 1px 0 #f6f6f6;
 }
 
 article ul,
