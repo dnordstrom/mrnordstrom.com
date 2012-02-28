@@ -15,9 +15,10 @@ a:hover {
   color: #468847;
 }
 
-p,
-pre,
-ul, ol {
+article.span6 p,
+article.span6 pre,
+article.span6 ul,
+article.span6 ol {
   margin: 0 0 28px;
 }
 
