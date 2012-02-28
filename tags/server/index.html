@@ -1,0 +1,49 @@
+---
+layout: base
+title: All posts
+---
+<div class="row">
+  <aside class="span3">
+    <div class="well">
+      <ul class="nav nav-list">
+        <li>
+          <p>
+            <div class="btn-group">
+              <a href="mailto:d@nintera.com" class="btn btn-small"><i class="icon-envelope"></i>Email</a>
+              <a href="skype:d.nintera?chat" class="btn btn-small"><i class="icon-comment"></i>Skype</a>
+              <a href="http://twitter.com/mrnordstrom" class="btn btn-small"><i class="icon-user"></i>Twitter</a>
+            </div>
+          </p>
+        </li>
+        
+        <li class="contact nav-header">Contact</li>
+        <li class="contact"><a href="mailto:d@nintera.com"><i class="icon-envelope"></i>Email</a></li>
+        <li class="contact"><a href="skype:d.nintera?chat"><i class="icon-comment"></i>Skype</a></li>
+        <li class="contact"><a href="http://twitter.com/mrnordstrom"><i class="icon-user"></i>Twitter</a></li>
+
+        <li class="nav-header">Articles</li>
+        <li><a href="archive.html"><i class="icon-folder-close"></i>Archive</a></li>
+        <li><a href="http://feeds.feedburner.com/mrnordstromcom"><i class="icon-bookmark"></i>RSS</a></li>
+
+        <li class="nav-header">All tags</li>
+        {% include tags.html %}
+      </ul>
+    </div>
+  </aside>
+
+  <section class="span8 offset1">
+    {% for post in site.tags.server %}
+      <article>
+        <h1>
+          <small>{{ post.date | date_to_long_string }}</small>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h1>
+        <header class="tags">
+          {% for tag in post.tags %}
+            <a href="/tags/{{ tag }}" class="label label-success">{{ tag }}</a>
+          {% endfor %}
+        </header>
+      </article>
+    {% endfor %}
+  </section>
+</div>

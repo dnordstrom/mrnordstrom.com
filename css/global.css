@@ -1,0 +1,136 @@
+/**
+ * General
+ */
+
+body {
+  background: #fdfdfd;
+  padding-bottom: 60px;
+}
+
+a {
+  color: #59A80F;
+}
+
+a:hover {
+  color: #468847;
+}
+
+p,
+pre,
+ul, ol {
+  margin: 0 0 28px;
+}
+
+article.span6 p,
+article.span6 ul li,
+article.span6 ol li,
+article.span6 footer {
+  font-family: Georgia, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+article.span6 h1,
+article.span6 h2,
+article.span6 h3,
+article.span6 h4,
+article.span6 h5,
+article.span6 h6 {
+  margin-bottom: 12px;
+}
+
+.tags {
+  line-height: 24px;
+}
+
+/**
+ * Headings
+ */
+
+h1.page-header {
+  margin-top: 100px;
+}
+
+h3.page-header {
+  padding-bottom: 6px;
+}
+
+/**
+ * Header
+ */
+
+header.container {
+  text-align: center;
+  padding: 140px 0 100px;
+}
+
+header.container h1 {
+  font-size: 52px;
+  line-height: 64px;
+}
+
+header.container p {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h1.heading {
+  margin: 0 0 40px;
+}
+
+article h1 small {
+  display: block;
+  line-height: 24px;
+}
+
+article {
+  margin: 0 0 24px;
+}
+
+article .tags {
+  margin: 5px 0 0;
+}
+
+aside {
+  margin-bottom: 40px;
+}
+
+.well {
+  padding: 6px 0;
+}
+
+.btn-small [class^="icon-"],
+.btn-small [class*=" icon-"] {
+  width: 16px;
+}
+
+aside .btn-group a {
+  width: 60px;
+}
+
+/**
+ * Reponsiveness
+ */
+
+@media screen and (max-width: 768px) {
+  header.container {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact,
+  .nav .nav-header.contact {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    display: inline;
+  }
+
+  aside .btn-group {
+    display: none;
+  }
+}
