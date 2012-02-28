@@ -34,6 +34,7 @@ GEM
       net-ssh (>= 1.99.1)
     posix-spawn (0.3.6)
     railsless-deploy (1.0.2)
+    rake (0.8.7)
     syntax (1.0.0)
 
 PLATFORMS
@@ -43,3 +44,4 @@ DEPENDENCIES
   capistrano
   jekyll
   railsless-deploy
+  rake
