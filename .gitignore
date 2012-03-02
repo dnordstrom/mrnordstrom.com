@@ -1,4 +1,6 @@
 _site/
+_inlcudes/tags.html
+_includes/top_tags.html
 config/*
 .DS_Store
 *.sw*
