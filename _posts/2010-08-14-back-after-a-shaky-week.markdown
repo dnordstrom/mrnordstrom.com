@@ -15,7 +15,7 @@ wordpress_url: http://www.mrnordstrom.com/?p=1266
 
 <p>Once you wake up, you&rsquo;ll be somewhat retarded for a while. My 12 year old sister sat next to me and told me an ambulance was on it&rsquo;s way. Since I had no idea what was going on&mdash;ironically I had been told what had happened but didn&rsquo;t <em>get it</em> and still do not remember being told&mdash;I wondered if I was going to live or die. My father said he got increasingly worried when I started asking &quot;where the fuck is the ambulance&quot;, and even more so when my pulse got so low he couldn&rsquo;t feel it and my face turned pale and slightly blue.</p>
 
-<p>When the ambulance finally arrived after 20 minutes, the guys helped my up but apparently my legs didn&rsquo;t work so I had to be carried to the ambulance. Needles were shoved into my arm and I was repeatedly asked questions that were unusually hard to answer, like what day it was and when I was born.</p>
+<p>When the ambulance finally arrived after 20 minutes, the guys helped me up but apparently my legs didn&rsquo;t work so I had to be carried to the ambulance. Needles were shoved into my arm and I was repeatedly asked questions that were unusually hard to answer, like what day it was and when I was born.</p>
 
 <p>I&rsquo;m better now but apparently the nerves in my neck are messed up, so the left side of my body is weak&mdash;my left arm feels numb all the time. I&rsquo;m also a bit tired and have occasional headaches and nosebleeds but hopefully all this will get better in a week or two.</p>
 
