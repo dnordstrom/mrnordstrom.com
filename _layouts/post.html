@@ -5,24 +5,11 @@
 
 <div class="container">
   <div class="row">
-    <h1 class="span12 page-header">{{ page.title }} <small>{{ page.date | date: "%B %d, %Y" }}</small></h1>
+    <h1 class="span8 offset2 page-header">{{ page.title }} <small>{{ page.date | date: "%B %d, %Y" }}</small></h1>
   </div>
 
   <section class="row">
-    <aside class="span3">
-      <h3 class="page-header">Tags</h3>
-      <p class="tags">
-        {% for tag in page.tags %}
-          <a href="/tags/{{ tag }}" class="label label-success">{{ tag }}</a>
-        {% endfor %}
-      </p>
-
-      <h3 class="page-header">About</h3>
-      <p>Hello, I&rsquo;m Daniel. I build things for the web. You can talk to me on <a href="http://twitter.com">Twitter</a> or on IRC at <a href="irc://irc.freenode.net/rubynorails">#rubyonrails</a> on FreeNode.
-      </p>
-    </aside>
-
-    <article class="span6 offset1">
+    <article class="span6 offset3">
       {{ content }}
      
       {% include signature.html %}

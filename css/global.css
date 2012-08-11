@@ -4,6 +4,7 @@
 
 body {
   background: #fdfdfd;
+  font-family: 'Source Sans Pro', sans-serif;
   padding-bottom: 60px;
 }
 
@@ -13,6 +14,7 @@ a {
 
 a:hover {
   color: #468847;
+  text-decoration: none;
 }
 
 hr {
@@ -30,9 +32,9 @@ article.span6 p,
 article.span6 ul li,
 article.span6 ol li,
 article.span6 footer {
-  font-family: Georgia, sans-serif;
-  font-size: 16px;
-  line-height: 26px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  line-height: 28px;
 }
 
 article.span6 h1,
@@ -42,10 +44,51 @@ article.span6 h4,
 article.span6 h5,
 article.span6 h6 {
   margin-bottom: 12px;
+  margin-top: 36px;
 }
 
 .tags {
   line-height: 24px;
+}
+
+/**
+ * Navbar
+ */
+
+.navbar-fixed-top .navbar-inner {
+  background: white;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar .brand {
+  color: #468847;
+  text-shadow: none;
+}
+
+.navbar .nav > li > a {
+  color: #468847;
+  color: rgb(51, 51, 51);
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.navbar .nav > li > a:hover {
+  color: #468847;
+  text-shadow: none;
+}
+
+.nav {
+  opacity: 0.4;
+  -webkit-transition: opacity .5s ease-in;
+  -moz-transition: opacity .5s ease-in;
+  -o-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
+}
+
+.navbar:hover .nav {
+  opacity: 1;
 }
 
 /**
@@ -54,6 +97,13 @@ article.span6 h6 {
 
 h1.page-header {
   margin-top: 100px;
+  text-align: center;
+  padding-top: 12px;
+  margin-bottom: 64px;
+}
+
+h1.page-header small {
+  display: block;
 }
 
 h3.page-header {
@@ -66,26 +116,26 @@ h3.page-header {
 
 header.container {
   text-align: center;
-  padding: 140px 0 100px;
+  padding: 120px 0 102px;
 }
 
 header.container h1 {
   font-size: 52px;
-  line-height: 64px;
-}
-
-header.container p {
-  font-size: 24px;
-  line-height: 36px;
+  line-height: 0.4em; /* For small text */
 }
 
 h1.heading {
   margin: 0 0 40px;
 }
 
+article h1 {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
 article h1 small {
   display: block;
-  line-height: 24px;
+  line-height: 48px;
 }
 
 article {
@@ -114,12 +164,39 @@ aside .btn-group a {
 }
 
 /**
+ * Post types
+ */
+
+article.quickie h1 a {
+  font-size: 20px;
+}
+
+article.quickie h1 small {
+  font-size: 14px;
+  line-height: 32px;
+}
+
+/**
+ * Code
+ */
+
+pre {
+ border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/**
  * Reponsiveness
  */
 
 @media screen and (max-width: 768px) {
   header.container {
-    padding: 20px 0;
+    padding: 20px 0 36px;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .container .nav-collapse {
+    float: right;
   }
 }
 
