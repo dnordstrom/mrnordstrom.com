@@ -110,6 +110,10 @@ h3.page-header {
   padding-bottom: 6px;
 }
 
+.archive h1 a {
+  color: #999;
+}
+
 /**
  * Header
  */
@@ -182,6 +186,14 @@ article.quickie h1 small {
 
 pre {
  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/**
+ * Footer
+ */
+
+footer.container {
+  text-align: center;
 }
 
 /**
