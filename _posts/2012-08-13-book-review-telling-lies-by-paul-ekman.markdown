@@ -13,7 +13,7 @@ It was several years ago that I started reading <a href="http://www.amazon.com/T
 
 The cover reads "clues to deceit in the marketplace, politics, and marriage". While this subtitle is accurate, it does not quite reflect the complexity of what is described within the frames of the book. More so than just clues to deceit in both everyday and highly deadly historical situations, it to my delight goes into detailed discussion on the morality and rationality of the described predicaments.
 
-When Lyndon B. Johnson lied about the Vetnam war, did he deceive only the American people or did he also deceive himself?
+When Lyndon B. Johnson lied about the Vietnam war, did he deceive only the American people or did he also deceive himself?
 
 Should the ignorance that lead to the explosion of the Challenger space shuttle be blamed on the single person ignoring the many warnings from engineers, or should NASA managers be held accountable for creating an atmosphere where lying was authorized and even encouraged?
 
