@@ -55,23 +55,38 @@ article.span6 h6 {
  * Navbar
  */
 
+.navbar-fixed-top {
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 0 5px #eee;
+}
+
 .navbar-fixed-top .navbar-inner {
   background: white;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: none;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
 }
 
+.navbar .nav > li {
+  color: #666;
+  padding: 10px 10px 11px;
+}
+
+
 .navbar .brand {
-  color: #468847;
+  color: #59A80F;
   text-shadow: none;
+}
+
+.navbar .brand:hover {
+  color: #468847;
 }
 
 .navbar .nav > li > a {
-  color: #468847;
-  color: rgb(51, 51, 51);
   text-shadow: none;
-  font-weight: bold;
+  padding: 0;
+  display: inline-block;
+  color: #59A80F;
 }
 
 .navbar .nav > li > a:hover {
@@ -79,21 +94,13 @@ article.span6 h6 {
   text-shadow: none;
 }
 
-.nav {
-  opacity: 0.4;
-  -webkit-transition: opacity .5s ease-in;
-  -moz-transition: opacity .5s ease-in;
-  -o-transition: opacity .5s ease-in;
-  transition: opacity .5s ease-in;
-}
-
-.navbar:hover .nav {
-  opacity: 1;
-}
-
 /**
  * Headings
  */
+
+h1 {
+  font-weight: normal;
+}
 
 h1.page-header {
   margin-top: 100px;
@@ -137,13 +144,23 @@ article h1 {
   margin-bottom: 64px;
 }
 
-article h1 small {
+h1 small {
   display: block;
   line-height: 48px;
+  font-size: 14px;
+}
+
+header h1 small {
+  font-size: 16px;
 }
 
 article {
-  margin: 0 0 24px;
+  margin: 0 0 50px;
+  border-bottom: 1px solid #eee;
+}
+
+article.archive {
+  border-bottom: none;
 }
 
 article .tags {
