@@ -309,7 +309,7 @@ blockquote {
   margin: 0;
 }
 #dsq-content .dsq-post-tools li.dsq-share-on h4 {
-  margin: 2px 0 0;
+  margin: -2px 0 0;
 }
 
 #dsq-content .dsq-attach-media .dsq-attach-media-container span {
@@ -319,6 +319,15 @@ blockquote {
 #comments #dsq-content h3 {
   margin-top: 40px;
 }
+
+#comments .dsq-attach-media {
+  margin-top: -4px;
+}
+
+#comments .dsq-attach-media iframe {
+  margin-top: 6px;
+}
+
 .dsq-brlink {
   font-weight: bold;
   text-transform: uppercase;
