@@ -53,7 +53,7 @@ HTML
     file.puts '<div class="row"><section class="span8 offset2">'
 
     tags.each do |tag, count|
-      file.puts "<article><h1><small>#{count} #{count == 1 ? "post" : "posts"}</small><a href=\"/tags/#{tag}\">#{tag}</a></h1></article>"
+      file.puts "<article><h1><a href=\"/tags/#{tag}\">#{tag}</a> <sup>#{count}</sup></h1></article>"
     end
   end
 

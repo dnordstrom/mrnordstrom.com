@@ -13,7 +13,7 @@ layout: nil
    <email>d@nintera.com</email>
  </author>
 
- {% for post in site.posts %}
+ {% for post in site.posts limit:10 %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="http://mysite.com/{{ post.url }}"/>
