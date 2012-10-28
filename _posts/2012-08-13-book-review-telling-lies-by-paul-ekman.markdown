@@ -21,7 +21,7 @@ Though this book was published in 1985, it may still be the most accurate and th
 
 An important fact clearly stated throughout the book is that there is no universal sign of deceit. There are only universal signs of emotion. The polygraph machine does not detect deceit; it detects arousal of any emotion. The book goes into fascinating depth on what questions we may ask ourselves and others to not misinterpret or misunderstand emotions and the motives behind them.
 
-This book was not written just for Norwegian investigative journalists. Anyone will benefit from by learning how to be more understanding and sensitive to the behavior of others. As a word of caution, if you believe that ignorance is bliss you may want to stay far away from this book -- it opens the door to many questions regarding ethics and an individuals right to emotional privacy.
+This book was not written just for Norwegian investigative journalists. Anyone will benefit from learning how to be more understanding and sensitive to the behavior of others. As a word of caution, if you believe that ignorance is bliss you may want to stay far away from this book -- it opens the door to many questions regarding ethics and an individuals right to emotional privacy.
 
 Last but not least, literally, the epilogue of the book is full of insight and gives us a glimpse into the mind of one of our time's greatest scientists:
 
