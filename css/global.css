@@ -47,6 +47,11 @@ article.span6 h6 {
   margin-top: 36px;
 }
 
+article.span6 h2 {
+  font-weight: normal;
+  font-size: 26px;
+}
+
 .tags {
   line-height: 24px;
 }
