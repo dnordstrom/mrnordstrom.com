@@ -324,7 +324,7 @@ blockquote {
   margin-top: -4px;
 }
 
-#comments .dsq-attach-media iframe {
+#comments #dsq-content .dsq-attach-media .dsq-attach-media-border iframe {
   margin-top: 6px;
 }
 
