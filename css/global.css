@@ -297,7 +297,10 @@ blockquote {
 #comments #dsq-content #dsq-comments .dsq-comment-message p {
   font-size: 13px;
   line-height: 22px;
-  padding: 0 30px 0 11px;
+}
+
+#comments #dsq-content #dsq-comments .dsq-comment-message {
+  padding: 0 20px 0 11px;
 }
 
 #comments .dsq-textarea-background {
