@@ -57,6 +57,32 @@ article.span6 h2 {
 }
 
 /**
+ * Images
+ */
+
+figure {
+  display: block;
+  float: none;
+  margin: 38px auto 32px;
+}
+
+.align-right { 
+  float: right;
+  margin: 4px -36px 16px 32px;
+}
+
+align-left { 
+  float: left;
+  margin: 4px 32px 16px -36px;
+}
+
+figcaption {
+  color: #999;
+  font-size: 12px;
+  padding: 3px 5px;
+}
+
+/**
  * Navbar
  */
 

@@ -11,6 +11,8 @@ type: featured
 
 It was several years ago that I started reading <a href="http://www.amazon.com/Telling-Lies-Marketplace-Politics-Marriage/dp/0393321886">Telling Lies</a> after finishing Paul Ekman's more recent book <a href="http://www.amazon.com/Emotions-Revealed-Paul-Ekman/dp/0753817659">Emotions Revealed</a>. While Emotions Revealed can be considered a relatively light read on the subject of emotions and their relation to deception, Telling Lies is fascinatingly deep on the subject of lying itself.
 
+<figure class="align-right"><a href="http://www.amazon.com/Telling-Lies-Marketplace-Politics-Marriage/dp/0393337456"><img src="/img/posts/telling-lies-paul-ekman.gif" alt="Telling Lies by Paul Ekman"></a><figcaption>Telling Lies by Paul Ekman.</figcaption></figure>
+
 The cover reads "clues to deceit in the marketplace, politics, and marriage". While this subtitle is accurate, it does not quite reflect the complexity of what is described within the frames of the book. More so than just clues to deceit in both everyday and highly deadly historical situations, it to my delight goes into detailed discussion on the morality and rationality of the described predicaments.
 
 When Lyndon B. Johnson lied about the Vietnam war, did he deceive only the American people or did he also deceive himself?
