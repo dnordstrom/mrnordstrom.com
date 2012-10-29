@@ -338,6 +338,7 @@ blockquote {
 
 #comments .dsq-comment-meta a, .dsq-comment-actions a {
   color: #999;
+  font-size: 12px;
 }
 
 #comments #dsq-content #dsq-footer li {
