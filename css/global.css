@@ -342,6 +342,10 @@ blockquote {
   font-size: 12px;
 }
 
+#comments #dsq-content ul {
+  margin: 0 11px;
+}
+
 #comments #dsq-content #dsq-footer li {
   margin: 0;
 }
