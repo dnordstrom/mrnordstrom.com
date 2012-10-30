@@ -419,6 +419,31 @@ footer.container {
   font-size: 13px;
 }
 
+footer p {
+  margin-bottom: 20px;
+}
+
+footer a img {
+  opacity: 0.4;
+  -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  -o-transition: opacity 0.5s ease-in;
+  transition: opacity 0.5s ease-in;
+  -webkit-transition-delay: 0.2s;
+}
+
+footer a:hover img {
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease-in;
+  -moz-transition: opacity 0.25s ease-in;
+  -o-transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s ease-in;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
 /**
  * Reponsiveness
  */
