@@ -406,6 +406,10 @@ article.span6 blockquote p {
   margin: 0 0 42px;
 }
 
+#subscribe p {
+  font-size: 13px;
+}
+
 /**
  * Footer
  */

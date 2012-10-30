@@ -5,9 +5,9 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Daniel Nordstrom, Web &amp; iOS Creator</title>
- <link href="http://mrnordstrom.com/feed.xml" rel="self"/>
+ <link href="http://feed.mrnordstrom.com/mrnordstrom" rel="self"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://mrnordstrom.com/feed.xml</id>
+ <id>http://mrnordstrom.com</id>
  <author>
    <name>Daniel Nordstrom</name>
    <email>d@madebydrop.com</email>
