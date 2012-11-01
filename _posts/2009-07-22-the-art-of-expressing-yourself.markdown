@@ -1,15 +1,12 @@
 --- 
 layout: post
 title: The Art of Expressing Yourself
-excerpt: ""
-wordpress_id: 363
-wordpress_url: http://www.mrnordstrom.com/?p=363
 ---
 <p>Without expressing yourself, it will be nearly impossible for you to get to where you want to be. If you don&rsquo;t tell people, they won&rsquo;t be able to help you. Even if you&rsquo;re working under the overly proud assumption that you can make it all on you own, people won&rsquo;t be able to get out of your way.</p>
 
 <p>If you&rsquo;re fortunate, like me, you have an employer that actually listens. If you&rsquo;re unfortunate, like most people, it will be tough. But the fact remains that if you never communicate what you truly love and desire, you&rsquo;re left with a very minor chance of reaching your goal&rsquo;no matter if it&rsquo;s articulated as The Law of Attraction or simply a rational truth.</p>
 
-<p>If you look at most successful, famous and infamous people around the world, they have this in common; they are very clear about what they do. They&rsquo;ve found their <em>thing</em> and the next and most natural step is to communicate it. Sometimes it can be too exciting to keep quiet about. But even if you haven&rsquo;t found ???????the thing??????? yet, talking about what you do and what you enjoy gives you a far greater chance of finding it.</p>
+<p>If you look at most successful, famous and infamous people around the world, they have this in common; they are very clear about what they do. They&rsquo;ve found their <em>thing</em> and the next and most natural step is to communicate it. Sometimes it can be too exciting to keep quiet about. But even if you haven&rsquo;t found &rlquo;the thing&rdquo; yet, talking about what you do and what you enjoy gives you a far greater chance of finding it.</p>
 
 <p>We&rsquo;re living in the golden age of the web, where this kind of communication is simple and incredibly accessible. As long as you have a device with internet access, the possibilities seem near endless. Without paying a cent, you have platforms and sites such as Twitter, WordPress, Flickr, Tumblr, Facebook, Snipt, LinkedIn and many others. The options you have and what you can do with them can simply be described as &ldquo;amazing&rdquo; but are at the same time, for most of us, nothing special.</p>
 
@@ -21,7 +18,7 @@ wordpress_url: http://www.mrnordstrom.com/?p=363
 <p>Some services are better than others. As always, this is a matter of personal preference. Below you&rsquo;ll find a small introduction to the ones I like. Some of these I don&rsquo;t even use but I like their concept and how I've seen other people use them. Have fun!</p>
 
 <h3>Twitter</h3>
-This one is at the top of the list because of it&rsquo;s pure simplicity. At first, I didn&rsquo;t get it. After using it for a while, you start understanding its value and how useful it actually is. Once you follow a decent amount of interesting people and begin replying and reposting, it can be inspirational, useful and a whole lot of fun.</p>
+This one is at the top of the list because of its pure simplicity. At first, I didn&rsquo;t get it. After using it for a while, you start understanding its value and how useful it actually is. Once you follow a decent amount of interesting people and begin replying and reposting, it can be inspirational, useful and a whole lot of fun.</p>
 
 <p>I recommend <a href="http://www.atebits.com/tweetie-mac/">Tweetie</a> as a client&rsquo;for both Mac OS and the iPhone&rsquo;to get the simplest and smoothest experience.</p>
 
@@ -30,9 +27,11 @@ This one is at the top of the list because of it&rsquo;s pure simplicity. At fir
 <h3>Blogging</h3>
 <p>Blogging has taken the world by storm and many people think it&rsquo;s overrated and hyped. However, it&rsquo;s a great and convenient way of expressing yourself. The best thing about it is that it offers the flexibility to do almost anything from almost anywhere. No matter if you write long novels, photo blog your sketchbook or just publishing whatever, a blog is suitable.</p>
 
-<p>Besides, if you don&rsquo;t like the word, you don&rsquo;t have to call it your ???????blog???????. Call it your ???????idea box??????? or ???????emotional waste basket.???????</p>
+<p>Besides, if you don&rsquo;t like the word, you don&rsquo;t have to call it your &ldquo;blog&rdquo;. Call it your &ldquo;idea box&rdquo; or &ldquo;emotional waste basket&rdquo;.</p>
 
-<p>Personally, I'm a long time user of <a href="http://wordpress.org/">WordPress</a>, which has a beautiful administration interface and is easy to theme and develop with. It's what makes the wheels spin on this beauty, for example.</p>
+<p>Personally, I&rsquo;m a long time user of <a href="http://wordpress.org/">WordPress</a>, which has a beautiful administration interface and is easy to theme and develop with. It's what makes the wheels spin on this beauty, for example.</p>
+
+<p><strong>2012 Update:</strong> The site is now powered by Jekyll, a static site generator written in Ruby&mdash;link is available in footer&mdash;for better performance and more flexibility.</p>
 
 <h3>Tumblr</h3>
 <p>Tumblr is something I have never tried but as I understand it, it&rsquo;s somewhere in between Twitter and blogging. This seems to be a good starting point as well as an easy yet complex way for experienced people to express themselves. If I wasn&rsquo;t such a WordPress fanboy, I&rsquo;d definitely try it out since it seems polished, tightly integrated with other services and very easy to use for all kinds of content.</p>
