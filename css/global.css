@@ -236,6 +236,15 @@ article.span6 {
   border-bottom: 1px solid #eee;
 }
 
+#article h1:first-child,
+#article h2:first-child,
+#article h3:first-child,
+#article h4:first-child,
+#article h5:first-child,
+#article h6:first-child {
+  margin-top: 0;
+}
+
 .span6.offset3 {
   margin-left: 205px;
   width: 570px;
@@ -525,12 +534,38 @@ footer a:hover img {
 }
 
 /**
- * Reponsiveness
+ * Responsiveness
  */
+
+@media screen and (max-width: 480px) {
+  .navbar .brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar .navbar-collapse {
+    display: none;
+  }
+
+  article figure,
+  article img {
+    display: none;
+  }
+
+  #article ul,
+  #article ol,
+  #article dl {
+    list-style-position: inside;
+  }
+}
 
 @media screen and (max-width: 960px) {
   header.container {
     padding: 105px 0 102px;
+  }
+
+  #social a {
+    opacity: 1;
   }
 
   .container,
