@@ -77,7 +77,7 @@ article.span6 h2 {
  */
 
 figure {
-  display: block;
+  display: inline-block;
   float: none;
   margin: 38px auto 32px;
 }
@@ -87,15 +87,27 @@ figure {
   margin: 4px -36px 16px 32px;
 }
 
-align-left { 
+.align-left { 
   float: left;
   margin: 4px 32px 16px -36px;
+}
+
+.bordered img {
+  border: 1px solid #ccc;
+}
+
+.rounded img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 
 figcaption {
   color: #999;
   font-size: 12px;
   padding: 3px 5px;
+  text-align: left;
 }
 
 /**
@@ -246,8 +258,24 @@ article.span6 {
 }
 
 .span6.offset3 {
-  margin-left: 200px;
-  width: 590px;
+  margin-left: 170px;
+  width: 600px;
+}
+
+.row {
+  margin-left: 0;
+}
+
+#article {
+  text-align: center;
+}
+
+#article p,
+#article footer,
+#article ol,
+#article ul,
+#article dl {
+  text-align: left;
 }
 
 article:last-of-type {
@@ -589,7 +617,6 @@ footer a:hover img {
     width: 100%;
   }
 
-  .row,
   [class*="span"] {
     margin-left: 0;
   }
