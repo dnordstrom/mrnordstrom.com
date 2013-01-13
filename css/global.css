@@ -347,13 +347,42 @@ code {
 
 blockquote {
   margin-left: 10px;
+  margin-right: 35px;
+  padding: 7px 15px 8px 15px;
+  text-align: left;
+  background: #f6f6f6;
+  border-color: #eee;
+  border-width: 1px 1px 1px 5px;
+  border-style: solid;
 }
 
 article.span6 blockquote p {
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 50px 0 0;
   color: #696969;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+article.span6 blockquote p:last-of-type {
+  margin-bottom: 0;
+}
+
+.quotation {
+  margin-top: 26px;
+}
+
+.quotation figcaption {
+  color: #808080;
+  font-size: 14px;
+  margin-top: -14px;
+  margin-left: 16px;
+}
+
+.quotation figcaption:before {
+  content: "\2014";
+}
+
+cite {
+  font-style: italic;
 }
 
 /**
