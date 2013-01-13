@@ -3,7 +3,7 @@ layout: post
 title: The Value of Being a Human Typewriter
 type: featured
 tags:
-  - writing
+ - writing
 ---
 
 It was back in the old days---we were two sixteen year old hackers in an IRC chat room, and it was probably long past midnight. My friend half-jokingly told me my writing looked like that of a human typewriter, and at the time I took it more as an insult than a compliment. But that statement stuck with me, and with time my view of it has changed.
@@ -20,7 +20,5 @@ Soon enough casual and formal will fade away. You will start thinking in better 
 </figure>
 
 By paying more attention, you will be better understood in any situation—that is a fact, a simple consequence of consistent effort. I would go as far as to say it will also improve, though to a lesser degree, your verbal communication skills. If doing something takes a little more effort while making you a lot more efficient, common sense should tell you to do it. That is also my advise to you, and why I'm writing this right now.
-
-
 
 I still have a long way to go, but being an obsessively compulsive typewriter has taught me a lot. It has taught me about the art of writing, and about the science and value of efficient communication. The statement that started this article, however, still to this day makes me remove a comma here and there, just to at least *sound* human in a world that increasingly is not.
