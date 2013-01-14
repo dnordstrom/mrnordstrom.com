@@ -24,16 +24,44 @@ hr {
 #social {
   margin: 0;
   text-align: center;
+  opacity: 0.2;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+#social:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
 }
 
 #social a {
 	display: inline-block;
-  margin: 8px 3px;
-  opacity: 0.2;
+  margin: 8px -1px;
+  opacity: 0.75;
+  padding: 1px 0;
+  -webkit-transition: all 0.08s ease-out, opacity 0.12s ease-out;
+  -moz-transition: all 0.08s ease-out, opacity 0.12s ease-out;
+  -o-transition: all 0.08s ease-out, opacity 0.12s ease-out;
+  transition: all 0.08s ease-out, opacity 0.12s ease-out;
+  -webkit-transform: scale(0.8);
 }
 
 #social a:hover {
   opacity: 1;
+  -webkit-transform: scale(1.0);
 }
 
 article.span6 p,
@@ -116,8 +144,8 @@ figcaption {
 
 .navbar-fixed-top
 {
-  border-bottom: 1px solid #eee;
-  box-shadow: 0 0 5px #eee;
+  /* border-bottom: 1px solid #eee; */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.06);
 }
 
 .navbar .nav,
@@ -262,6 +290,11 @@ article.span6 {
   width: 600px;
 }
 
+.span8.offset2 {
+  margin-left: 160px;
+  width: 620px;
+}
+
 .row {
   margin-left: 0;
 }
@@ -326,7 +359,8 @@ article.quickie h1 a {
 
 article.quickie h1 small {
   font-size: 14px;
-  line-height: 32px;
+  line-height: 28px;
+  padding-top: 6px;
 }
 
 /**
@@ -551,7 +585,7 @@ footer a:hover img {
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid #eee;
   border-right: none;
-  box-shadow: 0 0 5px #eee;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.06);
   position: fixed;
   height: 28px;
   bottom: 16px;
@@ -585,7 +619,7 @@ footer a:hover img {
 }
 
 #drop-in-share:hover .handle {
-  width: 108px;
+  width: 106px;
 }
 
 /**
