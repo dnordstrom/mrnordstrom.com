@@ -15,7 +15,7 @@ For some reason, this will occasionally make people think you are weird. That ne
 Soon enough formal and informal will fade away. You will start thinking in better terms, terms like efficiency and comprehension. Your choices and decisions will become based on making your reader get what you're trying to say. That is the goal of most of our writing, yet many of us pay little attention to it. We get caught up in our own thoughts, forgetting that our readers are not as familiar with them as we are.
 
 <figure class="quotation">
-<blockquote><p>What we want is writing that fits the occasion and the readership---and whether it's "formal" or "informal" by any individual's definition should not be a concern.</p></blockquote>
+<blockquote><p>What we want is writing that fits the occasion and the readership---and whether it's "formal" or "informal" by any individual's definition should not be a concern. Our primary concern should be clarity; the next should be economy.</p></blockquote>
 <figcaption>Richard Lauchman, <cite>Punctuation at Work</cite></figcaption>
 </figure>
 
