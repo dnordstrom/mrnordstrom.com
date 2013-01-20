@@ -6,6 +6,7 @@ body {
   background: #fdfdfd;
   font-family: 'Source Sans Pro', sans-serif;
   padding-bottom: 60px;
+  -webkit-backface-visibility: hidden;
 }
 
 a {
@@ -15,6 +16,11 @@ a {
 a:hover {
   color: #468847;
   text-decoration: none;
+}
+
+small {
+  color: #999;
+  font-size: 14px;
 }
 
 hr {
@@ -417,6 +423,135 @@ article.span6 blockquote p:last-of-type {
 
 cite {
   font-style: italic;
+}
+
+/**
+ * Timeline reset (for no-timeline support on small screens)
+ */
+
+#timeline {
+  margin-bottom: -40px;
+}
+
+.timeline-item {
+  height: 160px;
+  text-align: center;
+}
+
+/**
+ * Timeline (for large screens)
+ */
+
+@media screen and (min-width: 960px) {
+  #timeline {
+    padding: 40px 0 0;
+    width: 100%;
+    position: relative;
+  }
+
+  .timeline-item {
+    width: 100%;
+    height: 250px;
+    position: relative;
+  }
+
+  .timeline-vertical {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    left: 50%;
+    margin: 0 0 0 -2px;
+    background: #eee;
+    z-index: 1;
+  }
+
+  #timeline small {
+    display: block;
+    margin: 0 auto;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    background: #59A80F;
+    background: rgb(104, 183, 20);
+    border-radius: 10px;
+    border: 8px solid #fdfdfd;
+    position: relative;
+    color: #bbb;
+    z-index: 10;
+  }
+
+  #timeline .quickie small {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  }
+
+  #timeline small span {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -200px;
+    width: 180px;
+    text-align: left;
+  }
+
+  #timeline .quickie small span {
+    left: -204px;
+    text-align: right;
+  }
+
+  #timeline article {
+    background: #fff;
+    width: auto;
+    max-width: 65%;
+    margin: 0;
+    padding: 10px 16px;
+    position: relative;
+    float: right;
+    top: -47px;
+    right: 60%;
+  }
+
+  #timeline .quickie article {
+    top: -44px;
+    float: left;
+    right: auto;
+    left: 58%;
+  }
+
+  #timeline article h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #timeline .quickie article h1 {
+    text-align: left;
+  }
+
+  #timeline .quickie article h1 a {
+    line-height: 26px;
+    font-size: 16px;
+  }
+
+  #timeline article h1 {
+    text-align: right;
+  }
+
+  #timeline .timeline-horizontal {
+    position: absolute;
+    height: 4px;
+    background: #eee;
+    top: 19px;
+    left: 0;
+    width: 50%;
+  }
+
+  #timeline .quickie .timeline-horizontal {
+    top: 13px;
+    left: 50%;
+  }
 }
 
 /**
