@@ -526,6 +526,10 @@ cite {
     line-height: 30px;
   }
 
+  #timeline article h1 a {
+    position: relative;
+  }
+
   #timeline .quickie article h1 {
     text-align: left;
   }
@@ -533,6 +537,17 @@ cite {
   #timeline .quickie article h1 a {
     line-height: 26px;
     font-size: 16px;
+  }
+
+  #timeline article h1 a:visited span {
+    display: none;
+    background: #ccc;
+    border-radius: 16px;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 0;
+    left: 0px;
   }
 
   #timeline article h1 {
@@ -687,6 +702,16 @@ footer.container {
 
 footer p {
   margin-bottom: 20px;
+}
+
+footer strong a,
+footer strong a:link,
+footer strong a:visited,
+footer strong a:focus,
+footer strong a:active,
+footer strong a:hover {
+  color: #000;
+  text-decoration: none;
 }
 
 footer a img {
