@@ -801,6 +801,14 @@ footer a:hover img {
     display: none;
   }
 
+  article figure.quotation {
+    display: block;
+  }
+
+  article figure.quotation blockquote {
+    margin-right: 20px;
+  }
+
   #article ul,
   #article ol,
   #article dl {
