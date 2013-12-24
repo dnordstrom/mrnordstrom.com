@@ -1,8 +1,0 @@
-_site/
-_inlcudes/tags.html
-_includes/top_tags.html
-tags/
-config/*
-.DS_Store
-*.sw*
-*~
