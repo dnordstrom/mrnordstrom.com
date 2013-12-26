@@ -312,10 +312,12 @@ function Polestar(preferences) {
    * @method
    */
   function loadArticles() {
+    var pathParts = self.preferences.repo.split('/')
     var url = 'https://api.github.com/repos/' +
-      self.preferences.repo +
-      '/contents'
-    
+      pathParts.slice(0, 2).join('/') +
+      '/contents' +
+      (pathParts.length > 2 ? '/' + pathParts.slice(2).join('/') : '')
+    console.log(url)
     getURL(url, function (response) {
       self.articlesMetaData = JSON.parse(response)
         .filter(function (article) {
