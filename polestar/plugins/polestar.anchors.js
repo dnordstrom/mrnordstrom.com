@@ -4,6 +4,9 @@
  * to `true` (otherwise, the article containing the anchor may not
  * have loaded and thus the location hash will not work).
  *
+ * The anchor is unstyled, but you may easily use an icon font (such
+ * as Font Awesome) to get a nice icon like the ones you see on GitHub.
+ *
  * @author  L. Daniel Nordstrom <d@mrnordstrom.com>
  * @version 0.0.1
  * @license MPL 2.0
@@ -13,7 +16,19 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+/**
+ * This function is called for each article, and is passed the object
+ * containing the article element, content, etc. (At the time of
+ * writing, `{ id, element, content }`.)
+ *
+ * @method
+ */
 Polestar.Anchors = function (article) {
+  /**
+   * Turns a piece of text into a so called "slug": lowercase, spaces * replaced with hyphens.
+   *
+   * @method
+   */
   function slugify(text) {
     return text
       .toLowerCase()
@@ -21,6 +36,12 @@ Polestar.Anchors = function (article) {
       .replace(/ +/g,'-')
   }
 
+  /**
+   * Adds an ID attribute and an anchor to the given list of nodes.
+   *
+   * @method
+   * @param {NodeList/Array} headings List of heading nodes.
+   */
   function processHeadings(headings) {
     for (var i = 0; i < headings.length; ++i) {
       var heading = headings[i]
@@ -28,12 +49,12 @@ Polestar.Anchors = function (article) {
       var link = document.createElement('a')
 
       link.setAttribute('href', '#' + slug)
-      link.setAttribute('class', 'anchor fa fa-link')
+      link.setAttribute('class', 'anchor')
       heading.setAttribute('id', slug)
       heading.appendChild(link)
     }
   }
 
-  processHeadings(article.element.querySelectorAll('.writings h1'))
-  processHeadings(article.element.querySelectorAll('.writings h2'))
+  processHeadings(article.element.querySelectorAll('h1'))
+  processHeadings(article.element.querySelectorAll('h2'))
 }

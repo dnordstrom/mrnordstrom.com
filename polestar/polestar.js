@@ -24,62 +24,82 @@
  */
 
 /**
+ * @class
  * Global Polestar constructor.
  *
- * @class
- * @constructor
- * @param {Object} preferences - User defined preferences
+ * @param {Object} preferences User defined preferences
  */ 
 function Polestar(preferences) {
-  /** Self reference as closures change scope; use instead of `this` */
+  // Self reference as closures change scope; use instead of `this`
   var self = this
 
-  /** Defaults merged with user defined preferences */
+  /**
+   * @property {Object} preferences Polestar preferences
+   * @property {String} preferences.into Container element for articles
+   * @property {String} preferences.repo GitHub repository for articles
+   * @property {Boolean} preferences.loadAll Load all on page load
+   * @property {Boolean} preferences.permalinks Display '#' permalinks
+   * @property {Array} preferences.plugins Article plugin functions
+   */
   self.preferences = applyPreferencesToDefaults(preferences, {
-    into:       'body',
-    repo:       false,
-    loadAll:    false,
+    into: 'body',
+    repo: false,
+    loadAll: false,
     permalinks: false,
-    plugins:    false
+    plugins: false
   })
 
   /** Holds element into which articles are rendered */
   self.container = false
 
-  /** Holds article repository contents pulled from GitHub */
+  /** Holds repository contents as returned from GitHub */
   self.articlesMetaData = []
 
-  /** Holds objects of loaded articles */
+  /** Holds objects of loaded articles ({ id, element, content }) */
   self.articles = []
 
-  /** Caches the page height for onscroll calculation */
+  /** Cached page height for onscroll calculation */
   self.pageHeight = 0
 
-  /** Caches the viewport height for onscroll calculation */
+  /** Cached viewport height for onscroll calculation */
   self.viewportHeight = 0
 
-  /** Articles will autoload until this target ID has been reached */
+  /** Used to autoload until this target article ID has been reached */
   self.locationHashTarget = false
+
+  /** Various bits of text that may or may not be displayed */
+  self.messages = {
+    error: 'Something just went horribly wrong',
+    rateLimitExceeded: 'GitHub\u2019s hourly rate-limit was exceeded for your IP address, but things will work again soon.'
+  }
   
   /**
-   * Initialization on document ready. Sets the container element,
-   * begins loading articles and partials, and sets up `onscroll` event
-   * to load more content.
+   * Sets up initialization on document ready.
+   *
+   * @method
+   */
+  function constructor() {
+    if (document.readyState === 'complete') {
+      // Document already loaded
+      initialize()
+    } else {
+      // Document not yet loaded
+      document.addEventListener('DOMContentLoaded', function () {
+        initialize()
+      }, false)
+    }    
+  }
+
+  /**
+   * Initializes a new instance by getting container element, loading
+   * articles and partials, setting up event listeners, etc.
+   *
+   * @method
    */
   function initialize() {
-    if (document.readyState === 'complete') {
-      /* Document already loaded */
-      setContainer()
-      loadArticles()
-      loadPartials()
-    } else {
-      /* Document not yet loaded */
-      document.addEventListener('DOMContentLoaded', function () {
-        setContainer()
-        loadArticles()
-        loadPartials()
-      }, false)
-    }
+    setContainer()
+    loadArticles()
+    loadPartials()
 
     window.onscroll = function (event) {
       if (window.pageYOffset !== undefined) {
@@ -99,9 +119,31 @@ function Polestar(preferences) {
   }
 
   /**
+   * Appends an error message layer to the page.
+   *
+   * @method
+   * @param {String} message Error message to display
+   */
+  function displayError(message) {
+    var element = document.createElement('div')
+    var heading = document.createElement('h1')
+    var paragraph = document.createElement('p')
+
+    element.setAttribute('class', 'error')
+    element.appendChild(heading)
+    element.appendChild(paragraph)
+    paragraph.appendChild(document.createTextNode(message))
+    heading.appendChild(document.createTextNode(self.messages.error))
+
+    document.body.appendChild(element)
+  }
+
+  /**
    * Determines the target article ID from location hash, and checks
    * to see that the article actually exists (to make sure all
    * articles will not be loaded unnecessarily).
+   *
+   * @method
    */
   function setLocationHashTarget() {
     if (window.location.hash) {
@@ -120,6 +162,12 @@ function Polestar(preferences) {
     }
   }
 
+  /**
+   * Updates cached page and viewport height used in onscroll
+   * calculations.
+   *
+   * @method
+   */
   function updateScrollValues() {
     self.viewportHeight = document.documentElement.clientHeight
     self.pageHeight = Math.max(
@@ -153,30 +201,11 @@ function Polestar(preferences) {
   }
 
   /**
-   * Get raw GitHub content at given URL.
-   *
-   * @param {String} url - Request URL
-   * @param {Function} callback - Callback function pass results to
-   */
-  function getRaw(url, callback) {
-    var xhr = new XMLHttpRequest()
-
-    xhr.open('GET', url, true)
-    xhr.setRequestHeader('Accept', 'application/vnd.github.v3.raw')
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4) {
-        callback(xhr.status === 200 ? xhr.responseText : false)
-      }
-    }
-  
-    xhr.send(null)
-  }
-
-  /**
    * Get contents at given URL.
    *
+   * @method
    * @param {String} url - Request URL
-   * @param {Function} callback - Callback function pass results to
+   * @param {Function} callback - Callback function to pass results
    */
   function getURL(url, callback) {
     var xhr = new XMLHttpRequest()
@@ -184,9 +213,12 @@ function Polestar(preferences) {
     xhr.open('GET', url, true)
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
-        callback(
-          xhr.status === 200 ? xhr.responseText : false
-        )
+        if (xhr.status === 200) {
+          callback(xhr.responseText)
+        } else {
+          displayError(self.messages.rateLimitExceeded)
+          callback(false)
+        }
       }
     }
   
@@ -194,8 +226,78 @@ function Polestar(preferences) {
   }
 
   /**
+   * Get raw GitHub content at given URL.
+   *
+   * @method
+   * @param {String} url Request URL
+   * @param {Function} callback Callback function to pass results
+   */
+  function getRawContent(url, callback) {
+    var xhr = new XMLHttpRequest()
+
+    xhr.open('GET', url, true)
+    xhr.setRequestHeader('Accept', 'application/vnd.github.v3.raw')
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          callback(xhr.responseText)
+        } else {
+          displayError(self.messages.rateLimitExceeded)
+          callback(false)
+        }
+      }
+    }
+  
+    xhr.send(null)
+  }
+
+  /**
+   * Parses Markdown using the GitHub API.
+   *
+   * @method
+   * @param {String} source Markdown source to parse
+   * @param {Function} callback Callback function to pass HTML
+   */
+  function getParsedMarkdown(source, callback) {
+    var xhr = new XMLHttpRequest()
+
+    xhr.open('POST', 'https://api.github.com/markdown/raw', true)
+    xhr.setRequestHeader('Content-Type', 'text/x-markdown')
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          callback(xhr.responseText)
+        } else {
+          displayError(self.messages.rateLimitExceeded)
+          callback(false)
+        }
+      }
+    }
+  
+    xhr.send(source)
+  }
+
+  /**
+   * Get raw GitHub content at given URL and runs it through the
+   * GitHub Markdown parser, returning the results.
+   *
+   * @method
+   * @param {String} url Request URL
+   * @param {Function} callback Callback function to pass results
+   */
+  function getParsedContent(url, callback) {
+    getRawContent(url, function (content) {
+      getParsedMarkdown(content, function (content) {
+        callback(content)
+      })
+    })
+  }
+
+  /**
    * Simply sets the container member to the appropriate element,
    * based on the "into" preference (defaulting to the document body).
+   *
+   * @method
    */
   function setContainer() {
     self.container =
@@ -206,6 +308,8 @@ function Polestar(preferences) {
    * Loads articles contained in the GitHub repository specified by
    * the "repo" preference, calling the render method for each, and
    * adding them to the `articles` member.
+   *
+   * @method
    */
   function loadArticles() {
     var url = 'https://api.github.com/repos/' +
@@ -226,6 +330,8 @@ function Polestar(preferences) {
 
   /**
    * Loads one article from its GitHub URL.
+   *
+   * @method
    */
   function loadNextArticle() {
     if (self.articles.length < self.articlesMetaData.length) {
@@ -234,7 +340,7 @@ function Polestar(preferences) {
       var file = self.articlesMetaData[nextIndex].name
       var id = file.substr(0, file.lastIndexOf('.')) || file
 
-      getRaw(url, function (content) {
+      getParsedContent(url, function (content) {
         var done = nextIndex + 1 >= self.articlesMetaData.length
         var matchesTarget = id === self.locationHashTarget
         var article = {
@@ -267,13 +373,14 @@ function Polestar(preferences) {
    * Outputs article to the page by appending it to the container
    * element specified by the "into" option in preferences.
    *
+   * @method
    * @param {Object} article - Object literal article representation
    */
   function renderArticle(article) {
     var element = document.createElement('article')
     var div = document.createElement('div')
 
-    div.innerHTML = parseMarkdown(article.content)
+    div.innerHTML = article.content
     element.appendChild(div)
     element.setAttribute('id', article.id)
     article.element = element
@@ -295,6 +402,8 @@ function Polestar(preferences) {
    * Loads content for partials. Partials are added in markup using a
    * `data-at` attribute pointing to the local markdown file
    * containing the content.
+   *
+   * @method
    */
   function loadPartials() {
     var elements = document.querySelectorAll('*[data-at]')
@@ -305,7 +414,9 @@ function Polestar(preferences) {
       
       !(function (element) {
         getURL(path, function (partial) {
-          element.innerHTML = parseMarkdown(partial)
+          getParsedMarkdown(partial, function (content) {
+            element.innerHTML = content
+          })
         })
       }(element))
     }
@@ -313,6 +424,8 @@ function Polestar(preferences) {
 
   /**
    * Calls all functions specified in preferences as plugins.
+   *
+   * @method
    */
   function runPluginsForArticle(article) {
     if (self.preferences.plugins) {
@@ -328,6 +441,8 @@ function Polestar(preferences) {
 
   /**
    * Makes the window jump to the currently set location hash.
+   *
+   * @method
    */
   function refreshLocationHash() {
     if (window.location.hash) {
@@ -335,59 +450,6 @@ function Polestar(preferences) {
     }
   }
 
-  /**
-   * Tiny multi-markdown parser originally written by Mathieu Henri.
-   * Added underscore syntax since ellipsis emphasis at the beginning
-   * of a sentence is interpreted as a list item.
-   *
-   * @method
-   * @see https://github.com/p01/mmd.js
-   * @param {String} source - Markdown source to parse into HTML
-   * @returns {String} HTML output
-   */
-  function parseMarkdown(source) {
-    var h = ''
-
-    function escape(t) {
-      return new Option(t).innerHTML
-    }
-    
-    function inlineEscape(s) {
-      return escape(s)
-        .replace(/!\[([^\]]*)]\(([^(]+)\)/g, '<img alt="$1" src="$2">')
-        .replace(/\[([^\]]+)]\(([^(]+)\)/g, '$1'.link('$2'))
-        .replace(/`([^`]+)`/g, '<code>$1</code>')
-        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-        .replace(/\*([^*]+)\*/g, '<em>$1</em>')
-        .replace(/__([^*]+)__/g, '<strong>$1</strong>')
-        .replace(/_([^*]+)_/g, '<em>$1</em>')
-        .replace(/---/g, '&mdash;')
-        .replace(/--/g, '&ndash;')
-    }
-
-    source
-      .replace(/^\s+|\r|\s+$/g, '')
-      .replace(/\t/g, '    ')
-      .split(/\n\n+/)
-      .forEach(function(b, f, R) {
-        f = b[0]
-        R = {
-          '*': [/\n\* /, '<ul><li>', '</li></ul>'],
-          '1': [/\n[1-9]\d*\.? /, '<ol><li>', '</li></ol>'],
-          ' ': [/\n    /, '<pre><code>', '</pre></code>', '\n'],
-          '>': [/\n> /, '<blockquote>', '</blockquote>', '\n']
-        }[f]
-        h += R ? R[1] + ('\n' + b)
-          .split(R[0])
-          .slice(1)
-          .map(R[3] ? escape : inlineEscape)
-          .join(R[3] || '</li>\n<li>') + R[2] :
-          f == '#' ? '<h' + (f = b.indexOf(' ')) + '>' + inlineEscape(b.slice(f + 1)) + '</h' + f + '>' :
-          f == '<' ? b : '<p>' + inlineEscape(b) + '</p>'
-      })
-
-    return h
-  }
-
-  initialize()
+  /* Set up instance */
+  constructor()
 }
