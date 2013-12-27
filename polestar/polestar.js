@@ -37,6 +37,7 @@ function Polestar(preferences) {
    * @property {Object} preferences Polestar preferences
    * @property {String} preferences.into Container element for articles
    * @property {String} preferences.repo GitHub repository for articles
+   * @property {String} preferences.branch GitHub branch for articles
    * @property {Boolean} preferences.loadAll Load all on page load
    * @property {Boolean} preferences.permalinks Display '#' permalinks
    * @property {Array} preferences.plugins Article plugin functions
@@ -44,6 +45,7 @@ function Polestar(preferences) {
   self.preferences = applyPreferencesToDefaults(preferences, {
     into: 'body',
     repo: false,
+    branch: 'master',
     loadAll: false,
     permalinks: false,
     plugins: false
@@ -180,12 +182,12 @@ function Polestar(preferences) {
   }
 
   /**
-   * Override a set of default preferences with user defined values.
-   * Only allows setting properties that are available in defaults.
+   * Overrides a set of default preferences with user defined values.
+   * Only allows setting preferences that exist in defaults.
    *
    * @method
-   * @param {Object} userPreferences - User defined preferences.
-   * @param {Object} defaults - Default preferences to override.
+   * @param {Object} userPreferences User defined preferences.
+   * @param {Object} defaults Default preferences to override.
    */
   function applyPreferencesToDefaults(userPreferences, defaults) {
     for (var option in userPreferences) {
@@ -204,8 +206,8 @@ function Polestar(preferences) {
    * Get contents at given URL.
    *
    * @method
-   * @param {String} url - Request URL
-   * @param {Function} callback - Callback function to pass results
+   * @param {String} url Request URL
+   * @param {Function} callback Callback function to pass results
    */
   function getURL(url, callback) {
     var xhr = new XMLHttpRequest()
@@ -312,16 +314,20 @@ function Polestar(preferences) {
    * @method
    */
   function loadArticles() {
-    var pathParts = self.preferences.repo.split('/')
+    var parts = self.preferences.repo.split('/')
+    var repository = pathParts.slice(0, 2).join('/')
+    var dir = (parts.length > 2 ? '/' + parts.slice(2).join('/') : '')
     var url = 'https://api.github.com/repos/' +
-      pathParts.slice(0, 2).join('/') +
+      repository +
       '/contents' +
-      (pathParts.length > 2 ? '/' + pathParts.slice(2).join('/') : '')
+      dir +
+      '?ref=' +
+      self.preferences.branch
 
     getURL(url, function (response) {
       self.articlesMetaData = JSON.parse(response)
         .filter(function (article) {
-          return article.type === "file";
+          return article.type === "file"
         })
         .reverse()
 
@@ -358,7 +364,7 @@ function Polestar(preferences) {
         }
 
         /* Go to location hash if done loading without specific
-         * location hash target, or when specific target is reached */
+           location hash target, or when specific target is reached */
         if ((done && !self.locationHashTarget) || matchesTarget) {
           refreshLocationHash()
         }
@@ -376,7 +382,7 @@ function Polestar(preferences) {
    * element specified by the "into" option in preferences.
    *
    * @method
-   * @param {Object} article - Object literal article representation
+   * @param {Object} article Object literal article representation
    */
   function renderArticle(article) {
     var element = document.createElement('article')
