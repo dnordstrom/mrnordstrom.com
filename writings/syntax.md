@@ -97,27 +97,6 @@ How about we throw some angle braces and ampersands in there?
         &copy; 2004 Foo Corporation
     </div>
 
-Set in stone
-------------
-
-Preformatted blocks are useful for ASCII art:
-
-<pre>
-
-             ,-. 
-    ,     ,-.   ,-. 
-   / \   (   )-(   ) 
-   \ |  ,.>-(   )-< 
-    \|,' (   )-(   ) 
-     Y ___`-'   `-' 
-     |/__/   `-' 
-     | 
-     | 
-     |    -hrr- 
-  ___|_____________ 
-
-</pre>
-
 Playing the blame game
 ----------------------
 
