@@ -103,6 +103,7 @@ Set in stone
 Preformatted blocks are useful for ASCII art:
 
 <pre>
+
              ,-. 
     ,     ,-.   ,-. 
    / \   (   )-(   ) 
@@ -114,6 +115,7 @@ Preformatted blocks are useful for ASCII art:
      | 
      |    -hrr- 
   ___|_____________ 
+
 </pre>
 
 Playing the blame game

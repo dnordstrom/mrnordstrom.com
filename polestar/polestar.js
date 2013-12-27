@@ -315,7 +315,7 @@ function Polestar(preferences) {
    */
   function loadArticles() {
     var parts = self.preferences.repo.split('/')
-    var repository = pathParts.slice(0, 2).join('/')
+    var repository = parts.slice(0, 2).join('/')
     var dir = (parts.length > 2 ? '/' + parts.slice(2).join('/') : '')
     var url = 'https://api.github.com/repos/' +
       repository +
@@ -424,6 +424,11 @@ function Polestar(preferences) {
         getURL(path, function (partial) {
           getParsedMarkdown(partial, function (content) {
             element.innerHTML = content
+
+            runPluginsForArticle({
+              element: element,
+              content: content
+            })
           })
         })
       }(element))

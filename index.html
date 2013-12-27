@@ -13,13 +13,14 @@
     
     <script src="polestar/polestar.js"></script>
     <script src="polestar/plugins/polestar.mailto.js"></script>
+    <script src="polestar/plugins/polestar.typogr.js"></script>
     <script>
       new Polestar({
         repo: 'dnordstrom/mrnordstrom.com/writings',
         branch: 'gh-pages',
         into: '.writings',
         permalinks: true,
-        plugins: [Polestar.Mailto]
+        plugins: [Polestar.Mailto, Polestar.Typogr]
       })
     </script>
   </head>
