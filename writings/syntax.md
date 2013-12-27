@@ -33,13 +33,6 @@ These are dangerous goodies though, and we need to make sure email addresses don
 
 My email addy is tom@github.com.
 
-Math is hard, let's go shopping
--------------------------------
-
-In first grade I learned that 5 > 3 and 2 < 7. Maybe some arrows. 1 -> 2 -> 3. 9 <- 8 <- 7.
-
-Triangles man! a^2 + b^2 = c^2
-
 We all like making lists
 ------------------------
 
@@ -115,21 +108,6 @@ Or perhaps someone a little less eloquent:
 > I have made no mistakes. I'm confident I have. I just haven't - you
 > just put me under the spot here, and maybe I'm not as quick on my feet
 > as I should be in coming up with one.
-
-Table for two
--------------
-
-<table>
-  <tr>
-    <th>ID</th><th>Name</th><th>Rank</th>
-  </tr>
-  <tr>
-    <td>1</td><td>Tom Preston-Werner</td><td>Awesome</td>
-  </tr>
-  <tr>
-    <td>2</td><td>Albert Einstein</td><td>Nearly as awesome</td>
-  </tr>
-</table>
 
 Crazy linking action
 --------------------

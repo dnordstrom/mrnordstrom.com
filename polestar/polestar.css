@@ -200,6 +200,7 @@ code {
 }
 
 pre {
+  margin: 0 0 2em;
   padding: 0.75em 5em 0.55em 1em;
 }
 
@@ -207,6 +208,14 @@ pre code {
   background: none;
   border: none;
   padding: 0;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.45em;
+  orphans: 4;
+  widows: 4;
 }
 
 /**
@@ -298,14 +307,6 @@ pre code {
   margin: 0 auto;
   max-width: 55rem;
   padding: 0 4rem 10rem;
-}
-
-/** Body text */
-
-.writings p {
-  margin: 0 0 1.45em;
-  orphans: 4;
-  widows: 4;
 }
 
 /** Permalinks */
