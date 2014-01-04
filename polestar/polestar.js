@@ -114,7 +114,6 @@ function Polestar(preferences) {
     loadArticles()
     
     if (!loadPartialsFromCache()) {
-      console.log('Partials from URL')
       loadPartials()
     }
 
@@ -269,7 +268,7 @@ function Polestar(preferences) {
   function getParsedMarkdown(source, callback) {
     var xhr = new XMLHttpRequest()
 
-    xhr.open('POST', 'https://api.github.com/markdown/raw', true)
+    xhr.open('POST', 'https://api.github.com/markdown', true)
     xhr.setRequestHeader('Content-Type', 'text/x-markdown')
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
@@ -280,8 +279,14 @@ function Polestar(preferences) {
         }
       }
     }
+    
+    var data = {
+      'text': source,
+      'mode': 'gfm',
+      'context': 'dnordstrom/mrnordstrom.com'
+    }
   
-    xhr.send(source)
+    xhr.send(JSON.stringify(data))
   }
 
   /**
@@ -500,8 +505,6 @@ function Polestar(preferences) {
       self.partials = JSON.parse(
         sessionStorage.getItem('partials')
       ) || []
-      
-      console.log(self.partials)
       
       for (var i = 0; i < self.partials.length; ++i) {
         var partial = self.partials[i]

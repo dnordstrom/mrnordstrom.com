@@ -1,14 +1,19 @@
 /**
- * Default Polestar styles---the color palette is based on the
+ * Default Polestar styles, with its color palette based on the
  * fantastic Scope theme for Tumblr.
  *
- * Color palette
+ * Color Palette
  * =============
  * White          · rgb(255, 255, 255)
  * Lighter Gray   · rgb(221, 221, 221)
  * Darker Gray    · rgb(153, 153, 153)
  * Lighter Green  · rgb(174, 224, 200)
  * Darker Green   · rgb(129, 206, 167)
+ *
+ * Miscelleneous
+ * =============
+ * Transition In  · all 0.15s ease 0s
+ * Transition Out · all 0.25s ease 0.25s
  */
 
 /**
@@ -114,7 +119,7 @@ body {
   font-family: "Fira Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -142,7 +147,7 @@ a:hover {
 
 b,
 strong {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h1,
@@ -153,7 +158,7 @@ h5,
 h6 {
   border-bottom: 0.05em solid rgb(221, 221, 221);
   display: table;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.25;
   margin: 1.5em auto 0.875em;
   padding: 0 0.5em 0.2em;
@@ -194,19 +199,33 @@ h6 {
 }
 
 code,
-pre {
-  font-family: 'Fira Mono', monospace;
+pre,
+kbd,
+samp,
+var,
+blockquote {
+  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
-code {
-  margin: 0 0.1em;
-  padding: 0 0.35em;
+code,
+pre,
+kbd,
+samp,
+var {
+  font-family: 'Fira Mono', monospace;
+  font-style: normal;
+}
+
+code,
+kbd,
+samp,
+var {
+  margin: 0 0.15em;
 }
 
 pre code {
-  background: none;
-  border: none;
-  padding: 0;
+  margin: 0;
 }
 
 p {
@@ -234,11 +253,17 @@ dt {
 blockquote,
 pre,
 dd {
-  border-left: 0.35em solid #DDDDDD;
-  font-size: 15px;
-  font-size: 0.9375rem;
+  border-left: 0.35em solid rgb(174, 224, 200);
   margin: 0 5em 2em 2em;
   padding: 0.25em 1em 0.2em;
+  transition: all 0.25s ease 0.25s;
+}
+
+blockquote:hover,
+pre:hover,
+dd:hover {
+  border-color: rgb(129, 206, 167);
+  transition: all 0.15s ease 0s;
 }
 
 /**
@@ -322,21 +347,20 @@ dd {
 
 .writings {
   background: #F9F9F9;
-  font-weight: 300;
   margin: 100vh 0 0;
   position: relative;
   z-index: 2;
 }
 
 .writings article {
-  padding: 4rem 0;
+  padding: 4rem 0px 9rem;
   position: relative;
 }
 
 .writings div {
   margin: 0 auto;
   max-width: 55rem;
-  padding: 0 4rem 10rem;
+  padding: 0 4rem;
 }
 
 /** Permalinks */
