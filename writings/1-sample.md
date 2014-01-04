@@ -60,9 +60,6 @@ Inline Elements
 Reference Style Links
 ---------------------
 
-Crazy linking action
---------------------
-
 [Startpage] [1] and [DuckDuckGo] [2] are two great alternatives to Google.
 
   [1]: http://startpage.com/      "Startpage"
