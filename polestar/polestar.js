@@ -268,7 +268,7 @@ function Polestar(preferences) {
   function getParsedMarkdown(source, callback) {
     var xhr = new XMLHttpRequest()
 
-    xhr.open('POST', 'https://api.github.com/markdown', true)
+    xhr.open('POST', 'https://api.github.com/markdown/raw', true)
     xhr.setRequestHeader('Content-Type', 'text/x-markdown')
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
@@ -280,13 +280,7 @@ function Polestar(preferences) {
       }
     }
     
-    var data = {
-      'text': source,
-      'mode': 'gfm',
-      'context': 'dnordstrom/mrnordstrom.com'
-    }
-  
-    xhr.send(JSON.stringify(data))
+    xhr.send(source)
   }
 
   /**
@@ -536,11 +530,17 @@ function Polestar(preferences) {
       ))
       
       sessionStorage.setItem('articles', JSON.stringify(
-        self.articles
+        self.articles.map(function (article) {
+          article.element = false
+          return article
+        })
       ))
       
       sessionStorage.setItem('partials', JSON.stringify(
-        self.partials
+        self.partials.map(function (partial) {
+          partial.element = false
+          return partial
+        })
       ))
     }
   }

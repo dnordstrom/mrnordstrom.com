@@ -119,7 +119,7 @@ body {
   font-family: "Fira Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 300;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -147,7 +147,12 @@ a:hover {
 
 b,
 strong {
-  font-weight: 500;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
 }
 
 h1,
@@ -158,7 +163,7 @@ h5,
 h6 {
   border-bottom: 0.05em solid rgb(221, 221, 221);
   display: table;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.25;
   margin: 1.5em auto 0.875em;
   padding: 0 0.5em 0.2em;
