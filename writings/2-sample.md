@@ -18,8 +18,11 @@ Figures
 ### Image: Figure and Figcaption
 
 <figure>
+  
 ![HTML5](http://mrnordstrom.com/images/html5.png)
+
 <figcaption>The HTML5 logo, for a unified kind of web.</figcaption>
+
 <figure>
 
 ### Blockquote
@@ -29,18 +32,23 @@ Figures
 ### Blockquote: Plain Attribution
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+
 --- <cite>Dapibus Consectetur Inceptos</cite> by Ullamcorper Aenean
 
 ### Blockquote: Attribution in Small
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+
 <small><cite>Dapibus Consectetur Inceptos</cite> by Ullamcorper Aenean</small>
 
 ### Blockquote: Attribution in Figcaption
 
 <figure>
+
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+
 <figcaption><cite>Dapibus Consectetur Inceptos</cite> by Ullamcorper Aenean</figcaption>
+
 <figure>
 
 
