@@ -13,6 +13,7 @@
     
     <script src="polestar/polestar.js"></script>
     <script src="polestar/plugins/polestar.mailto.js"></script>
+    <script src="polestar/plugins/polestar.permalinks.js"></script>
     <script src="polestar/plugins/polestar.typogr.js"></script>
     <script>
       new Polestar({
@@ -20,7 +21,7 @@
         branch: 'gh-pages',
         into: '.writings',
         permalinks: true,
-        plugins: [Polestar.Mailto, Polestar.Typogr]
+        plugins: [Polestar.Mailto, Polestar.Permalinks, Polestar.Typogr]
       })
     </script>
   </head>

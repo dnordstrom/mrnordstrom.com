@@ -17,44 +17,46 @@
  */
 
 /**
- * This function is called for each article, and is passed the object
- * containing the article element, content, etc. (At the time of
- * writing, `{ id, element, content }`.)
+ * This function is called for each article, in the context of the
+ * object representing the article. This object has properties for
+ * the ID (`id`), content (`content`), and HTML node (`element`).
  *
  * @method
  */
-Polestar.Anchors = function (article) {
-  /**
-   * Turns a piece of text into a so called "slug": lowercase, spaces * replaced with hyphens.
-   *
-   * @method
-   */
-  function slugify(text) {
-    return text
-      .toLowerCase()
-      .replace(/[^\w ]+/g,'')
-      .replace(/ +/g,'-')
-  }
-
-  /**
-   * Adds an ID attribute and an anchor to the given list of nodes.
-   *
-   * @method
-   * @param {NodeList/Array} headings List of heading nodes.
-   */
-  function processHeadings(headings) {
-    for (var i = 0; i < headings.length; ++i) {
-      var heading = headings[i]
-      var slug = slugify(heading.textContent)
-      var link = document.createElement('a')
-
-      link.setAttribute('href', '#' + slug)
-      link.setAttribute('class', 'anchor')
-      heading.setAttribute('id', slug)
-      heading.appendChild(link)
+Polestar.Anchors = {
+  afterRender: function () {
+    /**
+     * Turns a piece of text into a so called "slug": lowercase, spaces * replaced with hyphens.
+     *
+     * @method
+     */
+    function slugify(text) {
+      return text
+        .toLowerCase()
+        .replace(/[^\w ]+/g,'')
+        .replace(/ +/g,'-')
     }
-  }
 
-  processHeadings(article.element.querySelectorAll('h1'))
-  processHeadings(article.element.querySelectorAll('h2'))
+    /**
+     * Adds an ID attribute and an anchor to the given list of nodes.
+     *
+     * @method
+     * @param {NodeList/Array} headings List of heading nodes.
+     */
+    function processHeadings(headings) {
+      for (var i = 0; i < headings.length; ++i) {
+        var heading = headings[i]
+        var slug = slugify(heading.textContent)
+        var link = document.createElement('a')
+
+        link.setAttribute('href', '#' + slug)
+        link.setAttribute('class', 'anchor')
+        heading.setAttribute('id', slug)
+        heading.appendChild(link)
+      }
+    }
+
+    processHeadings(this.element.querySelectorAll('h1'))
+    processHeadings(this.element.querySelectorAll('h2'))
+  }
 }

@@ -12,4 +12,4 @@
 * [Fork Polestar](https://github.com/dnordstrom/polestar)
 * Open source. No dependencies.
 
-**L. Daniel Nordstrom** is a web creator and entrepreneur with a passion for simplicity, communication, and security---an opinionated advocate of technological openness, transparency, privacy, and diplomacy, for a world where we make accurate and well-informed choices based on free knowledge using free software.
+**L. Daniel Nordstrom** builds mesmerizing technological castles. He is passionate about simplicity, communication, and security---an opinionated advocate of technological openness, transparency, privacy, and diplomacy, for a world where we make accurate and well-informed choices based on free knowledge using free software.
