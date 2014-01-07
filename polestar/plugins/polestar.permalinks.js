@@ -39,19 +39,19 @@ Polestar.Permalinks = {
         "December"
       ]
 
-      var date = Date.parse(dateMatches.splice(1).join('-'))
+      var date = new Date(dateMatches.splice(1).join('-'))
       var dateString =
-        monthNames[date.getMonth] + ' ' +
+        monthNames[date.getMonth()] + ' ' +
         date.getDate() + ', ' +
         date.getFullYear()
 
-      permalink.setAttribute('href', dateString)
+      permalink.appendChild(document.createTextNode(dateString))
     } else {
-      permalink.setAttribute('href', '#' + this.id)
+      permalink.appendChild(document.createTextNode('#'))
     }
 
-    permalink.setAttribute('class', 'permalink')    
-    permalink.appendChild(document.createTextNode('#'))
+    permalink.setAttribute('class', 'permalink')
+    permalink.setAttribute('href', '#' + this.id)
     this.element.appendChild(permalink)
   }
 }
