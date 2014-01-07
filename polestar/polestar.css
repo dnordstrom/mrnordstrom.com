@@ -250,6 +250,7 @@ ul,
 ol,
 dl {
   margin: 0 0 2em;
+  padding: 0;
 }
 
 li {
@@ -377,7 +378,6 @@ dd:hover {
 
 .writings ul {
   list-style-type: none;
-  padding: 0;
 }
 
 .writings ul li {
