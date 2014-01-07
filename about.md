@@ -1,7 +1,6 @@
 # Writings by L. D. Nordstrom
 
 * [E-mail](mailto:moc.mortsdronrm@d)
-* d@morg.cc over XMPP
 * [Twitter](https://twitter.com/mrnordstrom)
 * [Facebook](https://fb.com/dnordstrom)
 * [GitHub](https://github.com/dnordstrom)
