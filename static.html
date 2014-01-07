@@ -7,23 +7,20 @@
     <title>L. D. Nordstrom &middot; Web Junkie &middot; Cryptonymity Cheerleader</title>
     
     <meta name="description" content="L. Daniel Nordstrom is a web creator and entrepreneur with a passion for simplicity, communication, and security&mdash;an opinionated advocate of technological openness, transparency, privacy, and diplomacy, for a world where we make accurate and well-informed choices based on free knowledge using free software.">
-    <meta name="author" content="L. Daniel Nordstrom">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="polestar/polestar.css">
+    <link rel="stylesheet" href="../polestar/polestar.css">
     
-    <script src="polestar/polestar.js"></script>
-    <script src="polestar/plugins/polestar.mailto.js"></script>
-    <script src="polestar/plugins/polestar.permalinks.js"></script>
-    <script src="polestar/plugins/polestar.typogr.js"></script>
     <script>
-      new Polestar({
-        cache: false,
-        repo: 'dnordstrom/mrnordstrom.com/writings',
-        branch: 'gh-pages',
-        into: '.writings',
-        plugins: [Polestar.Mailto, Polestar.Permalinks, Polestar.Typogr]
-      })
+      /* Substitute for Polestar.Mailto plugin */
+      var links = document.querySelectorAll('a[href^="mailto:"]')
+
+      for (var i = 0; i < links.length; ++i) {
+        var address = links[i].getAttribute('href').split(':')[1]
+        var newLink = 'mailto:' + address.split('').reverse().join('')
+
+        links[i].setAttribute('href', newLink)
+      }
     </script>
   </head>
   <body>

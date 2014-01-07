@@ -373,6 +373,24 @@ dd:hover {
   padding: 0 4rem;
 }
 
+/** Lists */
+
+.writings ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.writings ul li {
+  position: relative;
+}
+
+.writings ul li:before {
+  content: "–";
+  left: -1.5em;
+  position: absolute;
+  top: 0;
+}
+
 /** Permalinks */
 
 .permalink {
