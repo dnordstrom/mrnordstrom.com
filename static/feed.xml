@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[L. D. Nordstrom &middot; Web Junkie &middot; Cryptonymity Cheerleader]]></title><description><![CDATA[L. Daniel Nordstrom is a web creator and entrepreneur with a passion for simplicity, communication, and security—an opinionated advocate of technological openness, transparency, privacy, and diplomacy, for a world where we make accurate and well-informed choices based on free knowledge using free software.]]></description><link>http://mrnordstrom.com/</link><generator>Polestar Static Generator</generator><lastBuildDate>Wed, 08 Jan 2014 00:19:19 GMT</lastBuildDate><atom:link href="http://mrnordstrom.com/static/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[
+Polestar 0.0.1 Powered]]></title><description><![CDATA[<h1>
+<a name="polestar-001-powered" class="anchor" href="#polestar-001-powered"><span class="octicon octicon-link"></span></a>Polestar 0.0.1 Powered</h1>
+
+<p>As a creator, you know it. You know that urge. We all do.</p>
+
+<p>In your mind is a perfect picture of what you want. Yet, as you look around, nothing hits your smile button. Your mind sighs. It then utters those horrifying, familiar words, "but that shouldn't take long to create," and it's game over---you've just signed off on the brutal assassination of God knows how many days, weeks, or years of your life.</p>
+
+<p><strong><a href="https://github.com/dnordstrom/polestar">Polestar</a></strong> is a child of this beautiful process. It's the tiny Markdown site authoring and blogging tool in JavaScript that powers this site. It's GitHub flavored and fully client-side, with a simple purpose: to fetch Markdown from local files and a GitHub repository, parse it, and slap it on a page.</p>
+
+<p>It weighs in at around 600 lines fully commented and wrapped hard at 70 columns. The idea is to keep it tiny and modular (preferably no larger than 500 lines), and further develop the plugin mechanism.</p>
+
+<p>Keep in mind, though, that a purely client-side solution has major drawbacks. It's not search engine friendly and can't offer RSS feeds. However, a Polestar static site and feed generator is in development to scratch this itch.</p>
+
+<p><strong>Note:</strong> This is alpha software. It may not work, it will definitely change, and documentation is a work in progress.</p>
+
+<h2>
+<a name="features--notes" class="anchor" href="#features--notes"><span class="octicon octicon-link"></span></a>Features &amp; Notes</h2>
+
+<ul>
+<li>Load writings from GitHub, and partials from local files</li>
+<li>Specify GitHub repository, branch, and directory</li>
+<li>Markdown parsed by GitHub API</li>
+<li>Articles autoload on scroll (can be disabled)</li>
+<li>Articles linkable despite dynamic loading (e.g. <code>example.com#the-filename</code> loads next until reaching article in location hash)</li>
+<li>Caching in sessionStorage (avoid GitHub API rate-limit)</li>
+<li>Preview local, unpublished article using "draft" preference (e.g. <code>draft: 'writings/20140106-new-article'</code>)</li>
+<li>Plugins (with <code>beforeRender</code> or <code>afterRender</code> methods)</li>
+<li>Example plugins included</li>
+<li>Example site included (with theme)</li>
+</ul><p>Polestar has no dependencies, but requires a browser that supports things like <code>XMLHttpRequest</code> and <code>document.querySelector</code>.</p>
+
+<p><strong>Note:</strong> When previewing a local article, keep in mind GitHub's rate limit of 60 unauthenticated requests per hour (the API is used to parse the Markdown).</p>
+
+<h2>
+<a name="usage-by-example" class="anchor" href="#usage-by-example"><span class="octicon octicon-link"></span></a>Usage by Example</h2>
+
+<p>This site uses the following script tag to create a Polestar instance that appends my writings to the <code>&lt;section class="writings"&gt;</code> element:</p>
+
+<pre><code>&lt;script&gt;
+  new Polestar({
+    repo: 'dnordstrom/mrnordstrom.com/writings',
+    branch: 'gh-pages',
+    into: '.writings',
+    plugins: [Polestar.Mailto, Polestar.Permalinks, Polestar.Typogr]
+  })
+&lt;/script&gt;
+</code></pre>
+
+<p>It uses a partial for the header bit. This is just a matter of specifying the local Markdown file in the element's <code>data-at</code> attribute:</p>
+
+<pre><code>&lt;header data-at="about" class="about"&gt;
+  &lt;!-- Renders /about.md here --&gt;
+&lt;/header&gt;
+</code></pre>
+
+<p>If this partial was residing instead in a subdirectory named "partials," we'd simply use <code>data-at="partials/about"</code>.</p>
+
+<h2>
+<a name="roadmap" class="anchor" href="#roadmap"><span class="octicon octicon-link"></span></a>Roadmap</h2>
+
+<ul>
+<li>
+<strong><del>Draft preview feature</del></strong><br>This could be a <code>draft: 'writings/a-new-article'</code> preference to preview a local article not yet commited, and exclude it from caching.<br><strong>Updated 1/6/2014:</strong> This is now possible, but it adds unnecessary production weight---around 40 lines---and shall thus be refactored into a plugin.</li>
+<li>
+<strong>Date feature</strong><br>The permalink plugin should check for dates in filenames (e.g. <code>20130106-an-article.md</code>), and show those instead of the hash mark---or, a new plugin may parse such dates and do something fun with them.</li>
+<li>
+<strong>Markdown parser feature</strong><br>Because the GitHub API parser strips away useful tags like <code>small</code>, <code>cite</code>, and <code>figure</code>, it should be possible to choose your own parser or disable parsing altogether (to use a plugin or other solution).</li>
+<li>
+<strong>YAML Front Matter feature</strong><br>This can be used as classes (<code>class="tag-one tag-two"</code>) or data-attributes (<code>data-tagone="value"</code>), giving more flexibility to plugins and styling.</li>
+<li>
+<strong>Error handling</strong><br>Exceptions, pretty messages, console output, you name it---the real deal.</li>
+<li>
+<strong>Plugin mechanism</strong><br>Make it smarter. Add methods as necessary---a drafts plugin could run <code>onReady</code>. Refactor to avoid <code>Function#call()</code>, and offer some interfacing with the Polestar instance.</li>
+<li>
+<strong>Local version</strong><br>Create a smaller version of Polestar for rendering only local files, with no GitHub support. The example site will be a quick drop-in solution for rendering a README.md file.</li>
+</ul><p>Polestar welcomes you to its humble <a href="https://github.com/dnordstrom/polestar">GitHub repository</a>.</p>]]></description><link>http://mrnordstrom.com/static/20140106-introducing-polestar.html</link><guid isPermaLink="true">http://mrnordstrom.com/static/20140106-introducing-polestar.html</guid><pubDate>Mon, 06 Jan 2014 00:00:00 GMT</pubDate></item></channel></rss>
