@@ -203,7 +203,6 @@ h6 {
 }
 
 code,
-pre,
 kbd,
 samp,
 var,
@@ -235,13 +234,10 @@ pre {
   overflow: auto;
 }
 
+pre,
 pre code {
-  border: none;
   font-size: 14px;
   font-size: 0.875rem;
-  margin: 0;
-  padding: 0;
-  white-space: pre;
 }
 
 p {
