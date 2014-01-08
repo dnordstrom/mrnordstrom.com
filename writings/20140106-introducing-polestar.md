@@ -42,7 +42,6 @@ This site uses the following script tag to create a Polestar instance that appen
     plugins: [
       Polestar.Mailto,
       Polestar.Permalinks,
-      Polestar.Prism,
       Polestar.Typogr
     ]
   })
