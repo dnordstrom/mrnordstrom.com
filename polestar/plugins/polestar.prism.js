@@ -24,7 +24,6 @@ Polestar.Prism = {
       var codeBlocks = this.element.querySelectorAll('pre code')
 
       for (var i = 0; i < codeBlocks.length; ++i) {
-        codeBlocks[i].setAttribute('class', 'language-javascript')
         Prism.highlightElement(codeBlocks[i])
       }
     }

@@ -33,25 +33,29 @@ Polestar has no dependencies, but requires a browser that supports things like `
 
 This site uses the following script tag to create a Polestar instance that appends my writings to the `<section class="writings">` element:
 
-    <script>
-      new Polestar({
-        repo: 'dnordstrom/mrnordstrom.com/writings',
-        branch: 'gh-pages',
-        into: '.writings',
-        plugins: [
-          Polestar.Mailto,
-          Polestar.Permalinks,
-          Polestar.Prism,
-          Polestar.Typogr
-        ]
-      })
-    </script>
+```javascript
+<script>
+  new Polestar({
+    repo: 'dnordstrom/mrnordstrom.com/writings',
+    branch: 'gh-pages',
+    into: '.writings',
+    plugins: [
+      Polestar.Mailto,
+      Polestar.Permalinks,
+      Polestar.Prism,
+      Polestar.Typogr
+    ]
+  })
+</script>
+```
 
 It uses a partial for the header bit. This is just a matter of specifying the local Markdown file in the element's `data-at` attribute:
 
-    <header data-at="about" class="about">
-      <!-- Renders /about.md here -->
-    </header>
+```javascript
+<header data-at="about" class="about">
+  <!-- Renders /about.md here -->
+</header>
+```
 
 If this partial was residing instead in a subdirectory named "partials," we'd simply use `data-at="partials/about"`.
 
