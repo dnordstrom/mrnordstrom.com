@@ -231,8 +231,14 @@ var {
   white-space: nowrap;
 }
 
+pre {
+  overflow: auto;
+}
+
 pre code {
   border: none;
+  font-size: 14px;
+  font-size: 0.875rem;
   margin: 0;
   padding: 0;
   white-space: pre;
@@ -482,4 +488,20 @@ h6:not(:hover) .anchor {
 .notice.notice-bordered p {
   border-bottom: 2px solid rgb(221, 221, 221);
   border-top: 2px solid rgb(221, 221, 221);
+}
+
+/**
+ * Page-wide warning message
+ */
+
+.warning {
+  background: #F9F9F9;
+  font-size: 15px;
+  left: 0;
+  padding: 1.6em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }

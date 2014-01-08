@@ -38,7 +38,12 @@ This site uses the following script tag to create a Polestar instance that appen
         repo: 'dnordstrom/mrnordstrom.com/writings',
         branch: 'gh-pages',
         into: '.writings',
-        plugins: [Polestar.Mailto, Polestar.Permalinks, Polestar.Typogr]
+        plugins: [
+          Polestar.Mailto,
+          Polestar.Permalinks,
+          Polestar.Prism,
+          Polestar.Typogr
+        ]
       })
     </script>
 
