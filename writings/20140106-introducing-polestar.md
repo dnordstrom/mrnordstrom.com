@@ -33,7 +33,7 @@ Polestar has no dependencies, but requires a browser that supports things like `
 
 This site uses the following script tag to create a Polestar instance that appends my writings to the `<section class="writings">` element:
 
-```javascript
+```html
 <script>
   new Polestar({
     repo: 'dnordstrom/mrnordstrom.com/writings',
@@ -51,7 +51,7 @@ This site uses the following script tag to create a Polestar instance that appen
 
 It uses a partial for the header bit. This is just a matter of specifying the local Markdown file in the element's `data-at` attribute:
 
-```javascript
+```html
 <header data-at="about" class="about">
   <!-- Renders /about.md here -->
 </header>
