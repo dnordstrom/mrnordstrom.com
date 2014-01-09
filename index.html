@@ -35,15 +35,18 @@
     </div>
 
     <script src="polestar/polestar.js"></script>
+    <script src="polestar/plugins/polestar.hoverlists.js"></script>
     <script src="polestar/plugins/polestar.mailto.js"></script>
     <script src="polestar/plugins/polestar.permalinks.js"></script>
     <script src="polestar/plugins/polestar.typogr.js"></script>
     <script>
       new Polestar({
+        draft: 'writings/20140106-introducing-polestar',
         repo: 'dnordstrom/mrnordstrom.com/writings',
         branch: 'gh-pages',
         into: '.writings',
         plugins: [
+          Polestar.HoverLists,
           Polestar.Mailto,
           Polestar.Permalinks,
           Polestar.Typogr
