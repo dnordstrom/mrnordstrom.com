@@ -1,5 +1,5 @@
 # MrNordstrom.com
 
-The `gh-pages` branch hosts the current version of the blog, powered by [Polestar](https://github.com/dnordstrom/polestar).
+The `gh-pages` branch hosts the actual site, powered by [Polestar](https://github.com/dnordstrom/polestar).
 
-Polestar is a tiny (400 lines at 10 KB with full JSDoc style comments before minification) client-side MultiMarkdown GitHub content platform created for powering this blog. It renders Markdown formatted articles fetched using the GitHub API, as well as simple local partials.
+Polestar is a tiny (600 lines complete with JSDoc comments, or 7 kB minified) and fully client-side content platform that renders Markdown formatted writings fetched from GitHub, and local partials.
