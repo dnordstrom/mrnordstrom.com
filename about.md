@@ -1,6 +1,6 @@
 # Writings by L. D. Nordstrom
 
-* [E-mail](mailto:moc.mortsdronrm@d)
+* [Email](mailto:moc.mortsdronrm@d)
 * [Twitter](https://twitter.com/mrnordstrom)
 * [Facebook](https://fb.com/dnordstrom)
 * [GitHub](https://github.com/dnordstrom)

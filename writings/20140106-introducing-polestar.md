@@ -4,7 +4,7 @@ As a creator, you know it. You know that urge. We all do.
 
 In your mind is a perfect picture of what you want. Yet, as you look around, nothing hits your smile button. Your mind sighs. It then utters those horrifying, familiar words, "but that shouldn't take long to create," and it's game over---you've just signed off on the brutal assassination of God knows how many days, weeks, or years of your life.
 
-**[Polestar](https://github.com/dnordstrom/polestar)** is a child of this beautiful process. It's the tiny Markdown site authoring and blogging tool in JavaScript that powers this site. It's GitHub flavored and fully client-side, with a simple purpose: to fetch Markdown from local files and a GitHub repository, parse it, and slap it on a page.
+[Polestar](https://github.com/dnordstrom/polestar) is a child of this beautiful process. It's the tiny Markdown site authoring and blogging tool in JavaScript that powers this site. It's GitHub flavored and fully client-side, with a simple purpose: to fetch Markdown from local files and a GitHub repository, parse it, and slap it on a page.
 
 It weighs in at around 600 lines fully commented and wrapped hard at 70 columns. The idea is to keep it tiny and modular (preferably no larger than 500 lines), and further develop the plugin mechanism.
 
