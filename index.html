@@ -4,13 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <title>L. D. Nordstrom &middot; Web Junkie &middot; Cryptonymity Cheerleader</title>
+    <title>L. D. Nordstrom, a Web Junkie and Cryptonymity Cheerleader</title>
     
     <meta name="description" content="L. Daniel Nordstrom is a web creator and entrepreneur with a passion for simplicity, communication, and security&mdash;an opinionated advocate of technological openness, transparency, privacy, and diplomacy, for a world where we make accurate and well-informed choices based on free knowledge using free software.">
     <meta name="author" content="L. Daniel Nordstrom">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="polestar/polestar.css">
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    >
+    <link
+      rel="stylesheet"
+      href="polestar/plugins/polestar.hoverlists.css"
+    >
+    <link
+      rel="stylesheet"
+      href="polestar/plugins/polestar.permalinks.css"
+    >
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -28,9 +39,9 @@
 
     <div class="notice">
       <p>
-        If you are a human being, consider subscribing to the <a href="static/feed.xml">RSS feed</a>.
+        If you are a human being, consider subscribing to the <a href="static/feed.xml" title="Subscribe to feed">RSS feed</a>.
         <br>
-        If you are a robot, kindly move along to the <a href="static">static version</a>.
+        If you are a robot, kindly move along to the <a href="static" title="View static edition">static edition</a>.
       </p>
     </div>
 
@@ -41,7 +52,6 @@
     <script src="polestar/plugins/polestar.typogr.js"></script>
     <script>
       new Polestar({
-        draft: 'writings/20140106-introducing-polestar',
         repo: 'dnordstrom/mrnordstrom.com/writings',
         branch: 'gh-pages',
         into: '.writings',

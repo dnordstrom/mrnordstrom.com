@@ -1,4 +1,4 @@
-# Writings by L. D. Nordstrom
+# Writings by L.D. Nordstrom
 
 * [Email](mailto:moc.mortsdronrm@d)
 * [Twitter](https://twitter.com/mrnordstrom)
