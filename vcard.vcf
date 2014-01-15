@@ -1,0 +1,42 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.9.1//EN
+N:Nordstrom;Daniel;;;
+FN:Daniel Nordstrom
+ORG:Drop Digital;
+TITLE:CINO
+EMAIL;type=INTERNET;type=HOME;type=pref:mrnordstrom@me.com
+EMAIL;type=INTERNET;type=WORK:daniel@ideakites.com
+EMAIL;type=INTERNET;type=WORK:daniel@hearlyrics.com
+EMAIL;type=INTERNET;type=WORK:daniel@ize.se
+item1.EMAIL;type=INTERNET:dnordstrom.e7433@m.evernote.com
+item1.X-ABLabel:Evernote
+EMAIL;type=INTERNET;type=HOME:d@mrnordstrom.com
+EMAIL;type=INTERNET;type=WORK:d@madebydrop.com
+EMAIL;type=INTERNET:dnordstrom@facebook.com
+item2.TEL;type=pref:+46 60-207 50
+item2.X-ABLabel:home
+TEL;type=CELL;type=VOICE:+46 76-847 76 93
+ADR;type=HOME;type=pref:;;Nybyggarvägen 28;Matfors;;864 31;Sweden
+ADR:;;Leerdamhof 170;Amsterdam;Noord-Holland;1108BP;Netherlands
+X-SOCIALPROFILE;type=twitter;x-userid=14187615:http://twitter.com/mrnordstrom
+X-SOCIALPROFILE;type=flickr:http://www.flickr.com/photos/dnordstrom
+X-SOCIALPROFILE;type=linkedin:http://www.linkedin.com/in/mrnordstrom
+X-SOCIALPROFILE;type=facebook;x-userid=81504374;x-displayname=Daniel Nordstrom:https://www.facebook.com/profile.php?id=81504374
+URL;type=pref:http://www.mrnordstrom.com/
+URL:http://www.nintera.com/
+URL:http://hearlyrics.com/
+URL:http://www.nintera.org/
+URL:http://www.ize.se/
+BDAY:1987-07-14
+X-AIM;type=HOME;type=pref:mrnordstrom@me.com
+IMPP;X-SERVICE-TYPE=AIM;type=HOME;type=pref:aim:mrnordstrom@me.com
+IMPP;X-SERVICE-TYPE=Facebook;type=HOME:xmpp:dnordstrom@chat.facebook.com
+item3.IMPP;X-SERVICE-TYPE=Skype:skype:ldnordstrom
+item3.X-ABLabel:Skype
+IMPP;X-SERVICE-TYPE=GoogleTalk;type=WORK:xmpp:l.daniel.nordstrom@gmail.com
+IMPP;X-SERVICE-TYPE=Facebook:xmpp:dnordstrom
+X-ABUID:F3F45392-EDCF-4CD0-9FA8-1200D51A2F14
+LANG:en_US
+TZ;VALUE=utc-offset:1
+END:VCARD
