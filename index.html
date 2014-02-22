@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <title>L. D. Nordstrom, a Web Junkie and Cryptonymity Cheerleader</title>
-    
+
     <meta name="description" content="L. Daniel Nordstrom is a web creator and entrepreneur with a passion for simplicity, communication, and security&mdash;an opinionated advocate of technological openness, transparency, privacy, and diplomacy, for a world where we make accurate and well-informed choices based on free knowledge using free software.">
     <meta name="author" content="L. Daniel Nordstrom">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,10 @@
     <link
       rel="stylesheet"
       href="styles.css"
+    >
+    <link
+      rel="stylesheet"
+      href="polestar/plugins/polestar.errors.css"
     >
     <link
       rel="stylesheet"
@@ -24,16 +28,14 @@
     >
   </head>
   <body>
-    <!--[if lte IE 9]>
-      <div class="warning">
-        <strong>
-          You are using an outdated browser in which this site, and many others, may not work.
-        </strong>
-        <br>
-        Please upgrade to <a href="http://www.mozilla.org/firefox">Firefox</a> (for an early look at the latest features, try <a href="http://www.mozilla.org/firefox/aurora">Firefox Aurora</a>) or review <a href="http://browsehappy.com/">your options</a>.
-      </div>
-    <![endif]-->
-    
+    <div class="warning">
+      <strong>
+        You are using an outdated browser in which this site, and many others, may not work.
+      </strong>
+      <br>
+      Please upgrade to <a href="http://www.mozilla.org/firefox">Firefox</a> (for an early look at the latest features, try <a href="http://www.mozilla.org/firefox/aurora">Firefox Aurora</a>) or review <a href="http://browsehappy.com/">your options</a>.
+    </div>
+
     <header data-at="about" class="about"></header>
     <section class="writings"></section>
 
@@ -45,22 +47,28 @@
       </p>
     </div>
 
-    <script src="polestar/polestar.min.js"></script>
+    <script src="polestar/polestar.js"></script>
+    <script src="polestar/plugins/polestar.errors.js"></script>
     <script src="polestar/plugins/polestar.hoverlists.js"></script>
     <script src="polestar/plugins/polestar.mailto.js"></script>
     <script src="polestar/plugins/polestar.permalinks.js"></script>
+    <script src="polestar/plugins/polestar.preview.js"></script>
     <script src="polestar/plugins/polestar.typogr.js"></script>
     <script>
       new Polestar({
+        preview: 'writings/0-new.md',
         repo: 'dnordstrom/mrnordstrom.com/writings',
         branch: 'gh-pages',
         into: '.writings',
         plugins: [
+          Polestar.Errors,
           Polestar.HoverLists,
           Polestar.Mailto,
           Polestar.Permalinks,
+          Polestar.Preview,
           Polestar.Typogr
-        ]
+        ],
+        cache: false
       })
     </script>
   </body>
