@@ -1,0 +1,48 @@
+---
+layout: post
+title: Rocking With Rails 3 On CentOS 5
+tags:
+- linux
+- server
+- rails
+- ruby
+---
+<p>The last two projects I&rsquo;ve worked on have involved setting up Ruby on Rails on CentOS 5 in order to run test and production sites. The process is really quite simple, though there are a few things I&rsquo;ve discovered along the way.</p>
+
+<figure class="align-right"><a href="http://mediatemple.net"><img src="/img/posts/mediatemple.gif" alt="MediaTemple Hosting"></a><figcaption>MediaTemple Hosting.</figcaption></figure>
+
+<p><a href="http://en.wikipedia.org/wiki/CentOS">CentOS 5</a> is a great server OS&mdash;my personal favorite. A few days ago I was setting up a server that came with Ubuntu 10.04 installed. After attempting for a couple of hours to get Ruby, Rails, nginx and Passenger up and running I finally decided to switch it to CentOS instead. Luckily <a href="http://mediatemple.net/webhosting/ve/">MediaTemple</a> makes switching OS merely a matter of selecting a radio button.</p>
+
+<p>After a few minutes CentOS was installed and from there things went well. Getting Ruby and Rails 3 working on CentOS 5 isn&rsquo;t difficult at all. However, while some of the software is available via the &ldquo;yum&rdquo; package manager, some is not, and some packages are outdated. You just have to do what&rsquo;s necessary to get everything installed and then you&rsquo;re all good!</p>
+
+<h2>Oversimplified instructions</h2>
+
+<ol>
+  <li>First of all you should <strong>install the development tools</strong> <a href="http://www.cyberciti.biz/faq/centos-linux-install-gcc-c-c-compiler/">via yum</a> so that we can compile the software we need.</li>
+
+  <li>Then you&rsquo;ll want to <strong>install Git</strong>. It&rsquo;s not available in yum so download the source from the <a href="http://git-scm.com/download">Git website</a> (use <a href="http://en.wikipedia.org/wiki/Wget">wget</a>), unpack it (tar zxvf) and compile it (./configure &amp;&amp; make &amp;&amp; make install).</li>
+
+  <li>If you want to easily switch between versions of Ruby, look into RVM (<a href="https://rvm.beginrescueend.com/">Ruby Version Manager</a>), but just having the latest version will suit my needs.</li>
+
+  <li>The <strong>latest version of Ruby</strong> isn&rsquo;t available via yum either so <a href="http://www.ruby-lang.org/en/downloads/">download the source</a> and compile it. It should install just fine&mdash;run &ldquo;ruby -v&rdquo; to check.</li>
+
+  <li>Ruby also installs <a href="http://rubygems.org/">RubyGems</a> so we can now go ahead and install our gems. You can also run an update if you want to.</li>
+
+  <li>Run &ldquo;gem install rails&rdquo; to <strong>install Rails 3 and its dependencies</strong>. Try creating and starting an application. If it complains about a missing <em>sqlite3-ruby</em> gem, download the <a href="http://www.sqlite.org/download.html">SQLite source code</a> and compile it, and run &ldquo;sudo gem install sqlite3-ruby&rdquo; to install the missing gem. Once again, yum doesn&rsquo;t have the required version.</li>
+
+  <li><strong>Choose which web server you want</strong> to use (<a href="http://en.wikipedia.org/wiki/Nginx">nginx</a> or <a href="http://en.wikipedia.org/wiki/Apache_HTTP_Server">Apache</a>) and install it along with <a href="http://en.wikipedia.org/wiki/Phusion_Passenger">Phusion Passenger</a> to run Rails applications. If you choose nginx, simply download Passenger and run the <a href="http://www.modrails.com/documentation/Users%20guide%20Nginx.html#_installing_phusion_passenger_for_nginx_through_the_installer">nginx installer</a>&mdash;it will compile nginx for you. To run Apache, install the yum httpd package. Then download, run and follow the instructions of the Passenger Apache module installer.</li>
+
+  <li>Set up your vhosts in your Apache or nginx configuration file.</li>
+</ol>
+
+<p>There are probably steps I haven&rsquo;t mentioned but my point is; just tackle your way through the software installation. If yum doesn&rsquo;t have what you need, just compile it from source. It worked well for me. While there are some third-party repositories for yum packages, I rather compile the software myself.</p>
+
+<p>Hopefully you can now deploy your application to the server. I highly suggest you use Capistrano for deployments and rollbacks, among many other tasks it can be used for. Further reading on running Rails 3 on CentOS 5:</p>
+
+<p>
+  <a href="http://blog.jeffcosta.com/2010/09/10/7-steps-to-rails-on-centos/">7 Steps To Rails On CentOS</a><br>
+  <a href="http://howboring.com/post/1226760251/centos-5-and-rails-3-and-ruby-1-9-2">CentOS 5 and Rails 3 and Ruby 1.9.2</a><br>
+  <a href="http://blog.jeffcosta.com/2011/02/27/install-ruby-version-manager-rvm-on-centos-5-5/">Install Ruby Version Manager (RVM) on CentOS 5.5</a><br>
+  <a href="http://www.shiftedbytes.com/2011/04/install-ruby-192-passenger-on-centos-55.html">Install Ruby 1.9.2 + Passenger On Centos 5.5 x32</a><br>
+  <a href="http://www.freshblurbs.com/install-ruby-1-9-centos">Install Ruby 1.9 on CentOS</a>
+</p>

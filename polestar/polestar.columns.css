@@ -1,0 +1,212 @@
+/**
+ * Default Polestar styles. The color palette based on the fantastic
+ * Scope theme for Tumblr.
+ *
+ * White  · · · · · rgb(255, 255, 255)
+ * Gray · · · · · · rgb(153, 153, 153)
+ * Lighter green  · rgb(174, 224, 200)
+ * Darker green · · rgb(129, 206, 167)
+ */
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f3f3;
+  color: rgb(153, 153, 153);
+  -moz-column-rule: 1px solid #DDD;
+  -moz-column-fill: auto;
+  -webkit-column-width: 100vw;
+  -moz-column-width: 100vw;
+  -o-column-width: 100vw;
+  column-width: 100vw;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  height: 100vh;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  margin: 0;
+  padding: 3rem 0;
+}
+
+a {
+  border-bottom: 1px solid rgba(70, 136, 71, 0.25);
+  color: #555;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(129, 206, 167);
+}
+
+.about {
+  height: 100vh;
+  padding: 0px 4rem 4rem;
+  position: relative;
+  width: 100vw;
+}
+
+.about h1,
+.about h2,
+.about ul,
+.about li {
+  display: inline;
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-weight: 200;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.about h1 {
+  font-weight: 400;
+}
+
+.about h2 {
+  font-weight: 300;
+}
+
+.about ul {
+  list-style-type: none;
+  white-space: normal;
+}
+
+.about h1:after,
+.about h2:after,
+.about li:not(:last-child):after {
+  color: #DDD;
+  content: '/';
+  font-weight: 200;
+  margin: 0 10px;
+}
+
+.about .biography {
+  bottom: 4rem;
+  left: 0px;
+  position: absolute;
+  width: 100vw;
+}
+
+.about .biography h3,
+.about .biography p {
+  bottom: 0;
+  margin: 0;
+  position: absolute;
+  width: 50vw;
+}
+
+.about .biography h3 {
+  border-right: 4px solid #DDD;
+  color: #EEE;
+  font-weight: 200;
+  font-size: 36px;
+  font-size: 2.25rem;
+  left: 0;
+  line-height: 1.2;
+  padding: 0.5rem 0.85rem 0.4rem 0;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.about .biography p {
+  border-left: 4px solid #f3f3f3;
+  color: #f3f3f3;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding: 0.5rem 4rem 0.5rem 1rem;
+  right: 0;
+}
+
+.writings {
+  -webkit-column-gap: 6rem;
+  -moz-column-gap: 6rem;
+  -o-column-gap: 6rem;
+  column-gap: 6rem;
+  -webkit-column-width: 25rem;
+  -moz-column-width: 25rem;
+  -o-column-width: 25rem;
+  column-width: 25rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  height: 100vh;
+  line-height: 1.5em;
+  padding: 0px 4rem;
+}
+
+.writings article {
+  -webkit-column-width: 25rem;
+  -moz-column-width: 25rem;
+  -o-column-width: 25rem;
+  column-width: 25rem;
+  margin: 0 0 100vh;
+}
+
+.writings h1,
+.writings h2,
+.writings h3,
+.writings h4,
+.writings h5,
+.writings h6 {
+  display: inline-block;
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.25;
+  margin: 0.75em 0 0.5em;
+  text-transform: uppercase;
+}
+
+.writings h1 {
+  border-bottom: 1px solid #DDD;
+  display: block;
+  font-size: 48px;
+  font-size: 3rem;
+  margin-top: 0;
+  padding: 0 0.15em 0.15em;
+}
+
+.writings h2 {
+  font-size: 36px;
+  font-size: 2.25rem;
+}
+
+.writings h3 {
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+
+.writings h4 {
+  font-size: 26px;
+  font-size: 1.625rem;
+}
+
+.writings h5 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.writings h6 {
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+
+.writings p {
+  margin: 0 0 1.45em;
+  orphans: 4;
+  widows: 4;
+}

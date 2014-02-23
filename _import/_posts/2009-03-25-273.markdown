@@ -1,0 +1,41 @@
+--- 
+layout: post
+title: Read On The Forums
+excerpt: ""
+wordpress_id: 273
+wordpress_url: http://www.mrnordstrom.com/?p=273
+---
+<p>Stumbled upon this nice thread on SitePoint Forums the other day. Still havenâ€™t read through it all but it thought Iâ€™d do some copy and pasting. Itâ€™s a great forum and I dearly recommend it, though I suspect most of you already know about it.</p>
+
+<p>The question is; do you have a designer/artist, even artistic or architectural movement you consider to be a strong influence/inspiration for you?</p>
+
+<blockquote>
+<p>
+CSS gallery sites do nothing to inspire me. It's just too much visual information to process, and then becomes the anti-inspiration: confusion.</p>
+
+<p>Instead, I rely on the 'design bibles' to get a feel of the philosophy behind certain design choices and styles. For me, this sparks the ideas and flow of creativity before I even touch photoshop.
+</p>
+<p>- armchaircritic</p>
+</blockquote>
+
+<blockquote>
+<p>The first considerations are always the principles that I have learned over the years:</p>
+
+<ul>
+<li>Clarity</li>
+<li>Simplicity on complexity</li>
+<li>Complexity on simplicity</li>
+<li>True to character</li>
+<li>Objectivity</li>
+<li>Simplifying complex thoughts into shapes</li>
+<li>Consistency of style within a project</li>
+<li>Honesty in treatment</li>
+<li>Goal oriented</li></ul>
+<p>- Datura</p>
+</blockquote>
+
+<blockquote><p>Trends are the crutch to which weak designers align themselves to.</p><p>- XLCowBoy</p></blockquote>
+
+<p>Now, I have (probably) never actually seen the work of these guys but their words are accurate. There's also some links to pretty design work in there in case you want to have a look.</p>
+
+<p>After a while, Mr. Datura expresses his opinions regarding plagiarism or copying of design but that's another story. <a href="http://www.sitepoint.com/forums/showthread.php?t=604036">Come join the discussion</a>.</p>

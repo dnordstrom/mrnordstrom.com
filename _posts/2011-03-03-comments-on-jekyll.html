@@ -1,0 +1,36 @@
+---
+layout: post
+title: Comments On Jekyll
+tags:
+- jekyll
+- blogging
+- sitepoint
+---
+
+<p>Some time after writing my last post about switching this blog to Jekyll instead of WordPress, I got an interesting comment from a reader. When I published my reply, it became so long that I thought it would be suitable for its own blog post, this one. Below is the part of the comment I replied to, and a revised version of my reply that is more suitable as a blog post.</p>
+
+<blockquote><p>&ldquo;&hellip;this &lsquo;<a href="https://github.com/mojombo/jekyll">Jekyll</a>&rsquo; you speak of, are you sure switching over to it was a good move? Not that I&rsquo;m trying to make you second-guess yourself or anything. It&rsquo;s just that I&rsquo;ve never even heard of it and from what it sounds like, it sounds similar to Plume and DotNetNuke and the like&hellip; Platforms, all of which, get hairy to deal with. Besides, wouldn&rsquo;t sticking with Wordpress be better in terms of universality and modularization of not only code but also, end-user facilities?&rdquo;</p></blockquote>
+
+<p>Comments are always appreciated! It&rsquo;s also great to have some people over from <a href="http://www.sitepoint.com/forums">SitePoint</a>, which is where this reader came from. It&rsquo;s a fantastic community for anyone in the web industry that I&rsquo;m trying to contribute to and be at as often as possible.</p>
+
+<p>I&rsquo;m not second-guessing any of my recent decisions. First of all I believe I made the right choices, second of all, second-guessing is not productive, and third, it&rsquo;s my own blog so I can switch it back and forth at any time.</p>
+
+<p>As for why I switched and why it&rsquo;s a good move:</p>
+
+<p>Curiosity was one of the main reasons why I switched to Jekyll. I saw the <a href="http://articles.sitepoint.com/article/jekyll-sites-made-simple">SitePoint article about Jekyll</a> and it made me interested. I quickly checked out the options mentioned above and if I&rsquo;m correct, they are CMSs. Jekyll is not a CMS, and that fact is the reason why I found it interesting in the first place&mdash;it&rsquo;s a lean tool for generating a static HTML site from a set of templates, pages and posts. Kind of like &ldquo;compiling&rdquo; a site.</p>
+
+<p>In my case I definitely think it&rsquo;s suitable and I also wanted to learn how to use and deploy it for future reference. Since I&rsquo;m a developer and always wrote my posts as markup even in WordPress, I feel that the supposedly better end-user facilities mentioned in the comment are just slowing me (and the site) down. I don&rsquo;t need them.</p>
+
+<p>As for universality and modularization&mdash;again, since I&rsquo;m a developer I&rsquo;d rather use Jekyll to write my own customizations quickly in Ruby exactly as I want them, or re-use open-source code, than go looking for plugins with configuration pages and other extra features I don&rsquo;t need. Since the end result of Jekyll is a static HTML/CSS/JS site without constantly interpreting PHP or Ruby on the server side, and without the need for a database server, the site becomes leaner, faster and can be deployed pretty much anywhere.</p>
+
+<p>I&rsquo;d love to try this out again on a client project. Hopefully it&rsquo;s a matter of time before a project shows up which it&rsquo;s suitable for. Since there is no CMS/back-end/control panel built into Jekyll, the client would have to know how to use a markup language such as HTML, Markup or Textile. No biggie. But it should also preferably be a small to medium sized site, since it needs to be re-generated when there&rsquo;s a change or when new content is added.</p>
+
+<p>A great aspect of using Jekyll with <a href="https://github.com/capistrano/capistrano/wiki/">Capistrano</a> as the deployment tool (and Git as source code management/version control) is that you&rsquo;ve got full control over the automated deployment process&mdash;that&rsquo;s another big reason why I wanted to use it. Running &quot;cap deploy&quot; in my OSX Terminal from the site folder will re-generate the site (with any new content) from the code and posts in the Git repository on my server, and move it to my production environment. To make it even simpler, I suppose I could also set up the Git repo with hooks that re-generate the site automatically whenever a new post has been committed.</p>
+
+<p>This might be tough for a client if he&rsquo;s not so tech savvy but I&rsquo;m thinking there are several ways to make it simpler. For example, by either having a cron-job on the server that runs every once in a while to check for content changes, or create a quick control panel just for allowing the client to re-generate the site whenever he/she wants. Doing the latter would be a great project, and perhaps it could also feature a small reference and help section for Textile/Markup syntax.</p>
+
+<p>I believe many clients would really appreciate the simplicity of such a solution as opposed to using a larger and fancier platform such as WordPress or Drupal, despite the good-looking WordPress admin panel. For many clients, a full CMS is just &ldquo;too many buttons and features&rdquo;&mdash;it slows them down and confuses them.</p>
+
+<p>Of course, the first concern should always be the site requirements, and many times a CMS solution is preferred. Sometimes it&rsquo;s even a requirement from the client (&ldquo;we want a WordPress site&rdquo;). But I definitely believe that a tool like Jekyll can be a great solution in some cases&mdash;especially if you go out of your way to further simplify and automate things. I&rsquo;d really love to try it out on a client project soon because I&rsquo;m confident I can make the client love it.</p>
+
+<p>Again, thanks for the comment&mdash;it&rsquo;s always a pleasure!</p>

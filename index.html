@@ -1,0 +1,32 @@
+---
+layout: base
+title: Home
+---
+<div class="row">
+  <section class="span8 offset2">
+    <div id="timeline">
+      
+      {% for post in site.posts limit:10 %}
+        <div class="timeline-item {{ post.type }}">
+
+          <div class="timeline-vertical"></div>
+          <div class="timeline-horizontal"></div>
+
+          <small><span>{{ post.date | date: "%B %e, %Y" }}</span></small>
+
+          <article class="{{ post.type }}">
+            <h1>
+              <a href="{{ post.url }}">{{ post.title }}<span></span></a>
+            </h1>
+          </article>
+
+        </div>
+      {% endfor %}
+
+    </div>
+
+    <article class="archive">
+      <h1><a href="/archive.html">Posts</a> &amp; <a href="/tags.html">Tags</a></h1>
+    </article>
+  </section>
+</div>

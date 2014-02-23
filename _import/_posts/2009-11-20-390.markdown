@@ -1,0 +1,24 @@
+--- 
+layout: post
+title: November 20, 2009
+excerpt: ""
+wordpress_id: 390
+wordpress_url: http://www.mrnordstrom.com/2009/11/20/390/
+---
+Had a seizure in the office this Monday, epilepsy style. Can't remember any of it since I blacked out for 10 minutes but when I woke up there was two nurses standing over me. Some say Iâ€™m overworked but I donâ€™t feel very stressed. I think itâ€™s just something that happened but Iâ€™m going to the hospital here in Amsterdam to check it out just in case. I mean, if Iâ€™ve got epilepsy Iâ€™d like to know about it.
+
+Been blogging way too little lately, so hereâ€™s a tiny status update. First of all, Iâ€™ve started a new company, a web shop, with my father and a friend. Itâ€™s called IZE.se (<a href="http://www.ize.se/">fritidsklÃ¤der pÃ¥ nÃ¤tet</a>) and Iâ€™m handling the technical aspects such as development, design, photo editing/uploading and hosting. 
+
+The shop is running on a <a href="http://www.magentocommerce.com/product/community-edition">Magento Community Edition</a> platform and the plan for me is to sell some good quality outdoors clothing for great prices in Sweden while pushing them with social networking and word-of-mouth. Ecommerce is more difficult than one may think but I believe weâ€™re three people who are good in three different areas and weâ€™re selling some pretty good products. Itâ€™s an interesting experience for me and hopefully itâ€™s a matter of time before things start moving.
+
+Besides that, Iâ€™ve also started doing some work as what I call â€œinteractive agentâ€. This means Iâ€™m taking care of someone elseâ€™s interactive needs, such as web sites, email addresses, social networking, home networking, you name it. The idea is to take care of the technical work that normal people donâ€™t enjoy so that they can focus on what they truly love. In the case of my first and favorite client, <a href="http://www.lacledesoul.com/">La Cle de Soul</a>, itâ€™s singing. Working with artists and other creative people is something Iâ€™ve wanted to do for a long time and itâ€™s amazing to finally be able to do it.
+
+Thatâ€™s about it. Iâ€™m looking forward to start blogging moreâ€”Iâ€™ve got a whole bunch of post-itâ€™s with stuff that needs to go online. Until they get transferred to the screen, hereâ€™s a list of a few people who produce some pretty nice Tweets now and then. Dofollow these and you shall be enlightened:
+
+<a href="https://twitter.com/aral">https://twitter.com/aral</a>
+<a href="https://twitter.com/andyrutledge">https://twitter.com/andyrutledge</a>
+<a href="https://twitter.com/zeldman">https://twitter.com/zeldman</a>
+<a href="https://twitter.com/nicksergeant">https://twitter.com/nicksergeant</a>
+<a href="https://twitter.com/scarymarys">https://twitter.com/scarymarys</a>
+
+Have fun!
